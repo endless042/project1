@@ -25,7 +25,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h3 class="w3-wide"><b>GLOBAL PLANT</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">소식</a>
+   
    
     <a onclick="myAccFunc('demoAcc')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       경매 <i class="fa fa-caret-down"></i>
@@ -51,6 +51,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       게시판 <i class="fa fa-caret-down"></i>
     </a>
     <div id="board" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button">소식</a>
       <a href="#" class="w3-bar-item w3-button">후기</a>
       <a href="#" class="w3-bar-item w3-button">문의</a>
       <a href="#" class="w3-bar-item w3-button">커뮤니티</a>
@@ -63,9 +64,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <a href="#" class="w3-bar-item w3-button">수입제안</a>
    
   </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+ 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('login').style.display='block'">로그인</a>
+   <a href="#footer" class="w3-bar-item w3-button w3-padding">회원가입</a>  
+      
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">ABOUT US</a> 
+ 
 </nav>
 
 <!-- Top menu on small screens -->
@@ -177,22 +181,37 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <!-- Newsletter Modal -->
-<div id="newsletter" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-    <div class="w3-container w3-white w3-center">
-      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-      <h2 class="w3-wide">NEWSLETTER</h2>
-      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+ <div id="login" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>아이디</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="아이디를 입력하세요." name="usrname" required>
+          <label><b>비밀번호</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="비밀번호를 입력하세요." name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">로그인</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked">로그인 기억하기
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button w3-red">취소</button>
+        <span class="w3-right w3-padding w3-hide-small"> <a href="#">비밀번호</a>를 잊으셨나요?</span>
+      </div>
+
     </div>
   </div>
-</div>
 
 <script>
 // Accordion 
-function myAccFunc(a) {
-    var x = document.getElementById(a);
+function myAccFunc(id) {
+    var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
@@ -201,7 +220,7 @@ function myAccFunc(a) {
 }
 
 // Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
+//document.getElementById("myBtn").click();
 
 
 // Script to open and close sidebar
