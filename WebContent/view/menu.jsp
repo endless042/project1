@@ -24,15 +24,18 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
    <h3 class="w3-wide"><b>GLOBAL PLANT</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-   
-    
-    <a onclick="myAccFunc('auction')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+     <a href="<%= request.getContextPath() %>/view/index.jsp" class="w3-bar-item w3-button">메인</a>
+     <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction" class="w3-bar-item w3-button">경매</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=gpurchase" class="w3-bar-item w3-button">공동구매</a>
+      <a href="#" class="w3-bar-item w3-button">수입제안</a>
+    <%-- <a onclick="myAccFunc('auction')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       경매 <i class="fa fa-caret-down"></i>
     </a>
     <div id="auction" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button">진행 중인 경매</a>
-      <a href="<%= request.getContextPath() %>/view/auction.jsp" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right "></i>예정된 경매</a>
-      <a href="#" class="w3-bar-item w3-button">지난 경매</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction1" class="w3-bar-item w3-button">진행 중인 경매</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction2" class="w3-bar-item w3-button w3-light-grey">
+      <i class="fa fa-caret-right w3-margin-right "></i>예정된 경매</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction0" class="w3-bar-item w3-button">지난 경매</a>
    
     </div>
     
@@ -45,7 +48,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <a href="#" class="w3-bar-item w3-button">예정된 공동구매</a>
       <a href="#" class="w3-bar-item w3-button">지난 공동구매</a>
    
-    </div>
+    </div> --%>
        <a onclick="myAccFunc('board')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       게시판 <i class="fa fa-caret-down"></i>
     </a>
@@ -60,14 +63,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     
 
 
-    <a href="#" class="w3-bar-item w3-button">수입제안</a>
+    
    
   </div>
  
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('login').style.display='block'">로그인</a>
-   <a href="#footer" class="w3-bar-item w3-button w3-padding">회원가입</a>  
+   <a href="<%= request.getContextPath() %>/view/index.jsp?select=join" class="w3-bar-item w3-button w3-padding">회원가입</a>  
       
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">ABOUT US</a> 
+  <a href="<%= request.getContextPath() %>/view/index.jsp?select=contact" class="w3-bar-item w3-button w3-padding">ABOUT US</a> 
  
 </nav>
 
@@ -82,7 +85,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
 
-<!-- Newsletter Modal -->
+<!-- login Modal -->
  <div id="login" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
@@ -97,13 +100,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="아이디를 입력하세요." name="usrname" required>
           <label><b>비밀번호</b></label>
           <input class="w3-input w3-border" type="password" placeholder="비밀번호를 입력하세요." name="psw" required>
-          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">로그인</button>
+          <button class="w3-button w3-block w3-black w3-section w3-padding" type="submit">로그인</button>
           <input class="w3-check w3-margin-top" type="checkbox" checked="checked">로그인 기억하기
         </div>
       </form>
 
       <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-        <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button w3-red">취소</button>
+        <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button w3-black">취소</button>
         <span class="w3-right w3-padding w3-hide-small"> <a href="#">비밀번호</a>를 잊으셨나요?</span>
       </div>
 

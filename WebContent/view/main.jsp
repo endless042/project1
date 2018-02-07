@@ -18,13 +18,27 @@
 
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
-    <p class="w3-left">경매</p>
+    <p class="w3-left">메인 화면</p>
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
     </p>
   </header>
 
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="<%= request.getContextPath() %>/images/menusample.PNG" alt="menusample" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">새로운 식물 업데이트</h1>
+      <h1 class="w3-hide-large w3-hide-medium">새로운 식물<br> 업데이트</h1>
+      <h1 class="w3-hide-small">매주 금요일 저녁 6시</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">구경하기</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
 <!-- category -->
     <div class="w3-container">
     <div class="w3-section w3-bottombar w3-padding-16">
@@ -97,8 +111,7 @@
   </div>
 
   
-  
-  <!-- Pagination -->
+    <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
@@ -109,6 +122,7 @@
       <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
+  
   
 
 
