@@ -20,9 +20,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
+  <div class="w3-container w3-display-container w3-padding-16 w3-white">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-   <h3 class="w3-wide"><b>GLOBAL PLANT</b></h3>
+   <h3 class="w3-wide"><b>&nbsp;&nbsp;GLOBAL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PLANT</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
      <a href="<%= request.getContextPath() %>/view/index.jsp" class="w3-bar-item w3-button">메인</a>
@@ -32,35 +32,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <%= (select!=null&&select.equals("gpurchase"))?"w3-light-grey":"" %>">공동구매</a>
       <a href="<%= request.getContextPath() %>/view/index.jsp?select=survey" class="w3-bar-item w3-button 
       <%= (select!=null&&select.equals("survey"))?"w3-light-grey":"" %>">수입제안</a>
-    <%-- <a onclick="myAccFunc('auction')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      경매 <i class="fa fa-caret-down"></i>
-    </a>
-    <div id="auction" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction1" class="w3-bar-item w3-button">진행 중인 경매</a>
-      <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction2" class="w3-bar-item w3-button w3-light-grey">
-      <i class="fa fa-caret-right w3-margin-right "></i>예정된 경매</a>
-      <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction0" class="w3-bar-item w3-button">지난 경매</a>
    
-    </div>
-    
-    
-     <a onclick="myAccFunc('gpurchase')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      공동구매 <i class="fa fa-caret-down"></i>
-    </a>
-    <div id="gpurchase" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button">진행 중인 공동구매</a>
-      <a href="#" class="w3-bar-item w3-button">예정된 공동구매</a>
-      <a href="#" class="w3-bar-item w3-button">지난 공동구매</a>
+
    
-    </div> --%>
-       <a onclick="myAccFunc('board')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+       <a onclick="myAccFunc('board')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="<%=(request.getParameter("bdck")!=null)?"boardmenu":"off" %>">
       게시판 <i class="fa fa-caret-down"></i>
     </a>
     <div id="board" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button">소식</a>
-      <a href="#" class="w3-bar-item w3-button">후기</a>
-      <a href="#" class="w3-bar-item w3-button">문의</a>
-      <a href="#" class="w3-bar-item w3-button">커뮤니티</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=notice&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("notice"))?"w3-light-grey":"" %>">소식</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=review&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("review"))?"w3-light-grey":"" %>">후기</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=qna&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("qna"))?"w3-light-grey":"" %>">문의</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=community&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("community"))?"w3-light-grey":"" %>">커뮤니티</a>
    
     </div>
     
@@ -76,13 +58,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       
   <a href="<%= request.getContextPath() %>/view/index.jsp?select=contact" class="w3-bar-item w3-button w3-padding">ABOUT US</a> 
  <br><br>
- <table class="w3-bar-item w3-padding"><tr height="40px"><th>최근 본 상품</th></tr>
+ <table class="w3-bar-item w3-padding"><tr height="40px"><th>최근 본 상품</th>
+ <th>
+ <a href="#" style="text-decoration: none;">◀</a>&nbsp; <a href="#" style="text-decoration: none;">▶</a>&nbsp;&nbsp;</th>
+ </tr>
  <tr></tr>
  <tr>
- <td> <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%">&nbsp;
+ <td colspan="2"> <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%">&nbsp;
  <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%"></td><tr>
   <tr>
- <td> <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%">&nbsp;
+ <td colspan="2"> <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%">&nbsp;
  <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%"></td><tr>
  </table>
 </nav>
@@ -137,6 +122,7 @@ function myAccFunc(id) {
     }
 }
 
+document.getElementById("boardmenu").click();
 
 // Script to open and close sidebar
 function w3_open() {

@@ -16,7 +16,7 @@
 
  <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-  <h2 class="w3-wide w3-center">수입 제안 페이지</h2>
+  <h2 class="w3-wide w3-center">문의 게시판</h2>
   <div class="w3-row w3-padding-16">sdgsdgsdgsd</div>
   
     <h2 class="w3-wide w3-center">LOCATION</h2>

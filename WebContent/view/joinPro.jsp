@@ -1,3 +1,4 @@
+<%@page import="java.util.Iterator"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="db.UserlistDBBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -17,19 +18,32 @@
 <jsp:setProperty name="user" property="*"/>
 </jsp:useBean>
 
-<% System.out.println(user); 
+<% 
+String[] tmp=request.getParameterValues("tel");
+String tel="";
+
+for(int i=0;i<tmp.length;i++){
+	tel+=tmp[i];
+}
+
+
+
+System.out.println(tel);
 
 
 UserlistDBBean userPro= UserlistDBBean.getInstance(); 
 
-	
+	if(user.getTel()==null){
+		 user.setTel("미입력");		
+	}
+
+ 
 	
 	if(user.getAddr()==null){
 	user.setAddr("미입력");}
-	if(user.getTel()==null){
-	user.setTel("미입력");}
 	
 	
+	System.out.println(user); 
 	
 	userPro.addUser(user);%>
 	
