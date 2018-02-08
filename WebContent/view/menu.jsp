@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <% String select=request.getParameter("select"); %>
 <html>
 <title>Plant shop</title>
 <meta charset="UTF-8">
@@ -25,9 +26,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
      <a href="<%= request.getContextPath() %>/view/index.jsp" class="w3-bar-item w3-button">메인</a>
-     <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction" class="w3-bar-item w3-button">경매</a>
-      <a href="<%= request.getContextPath() %>/view/index.jsp?select=gpurchase" class="w3-bar-item w3-button">공동구매</a>
-      <a href="#" class="w3-bar-item w3-button">수입제안</a>
+     <a href="<%= request.getContextPath() %>/view/index.jsp?select=auction" class="w3-bar-item w3-button
+      <%= (select!=null&&select.equals("auction"))?"w3-light-grey":"" %>">경매</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=gpurchase" class="w3-bar-item w3-button 
+      <%= (select!=null&&select.equals("gpurchase"))?"w3-light-grey":"" %>">공동구매</a>
+      <a href="<%= request.getContextPath() %>/view/index.jsp?select=survey" class="w3-bar-item w3-button 
+      <%= (select!=null&&select.equals("survey"))?"w3-light-grey":"" %>">수입제안</a>
     <%-- <a onclick="myAccFunc('auction')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       경매 <i class="fa fa-caret-down"></i>
     </a>
@@ -71,7 +75,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
    <a href="<%= request.getContextPath() %>/view/index.jsp?select=join" class="w3-bar-item w3-button w3-padding">회원가입</a>  
       
   <a href="<%= request.getContextPath() %>/view/index.jsp?select=contact" class="w3-bar-item w3-button w3-padding">ABOUT US</a> 
- 
+ <br><br>
+ <table class="w3-bar-item w3-padding"><tr height="40px"><th>최근 본 상품</th></tr>
+ <tr></tr>
+ <tr>
+ <td> <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%">&nbsp;
+ <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%"></td><tr>
+  <tr>
+ <td> <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%">&nbsp;
+ <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%"></td><tr>
+ </table>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -96,9 +109,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
       <form class="w3-container" action="/action_page.php">
         <div class="w3-section">
-          <label><b>아이디</b></label>
+          <label><b>ID</b></label>
           <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="아이디를 입력하세요." name="usrname" required>
-          <label><b>비밀번호</b></label>
+          <label><b>PASSWORD</b></label>
           <input class="w3-input w3-border" type="password" placeholder="비밀번호를 입력하세요." name="psw" required>
           <button class="w3-button w3-block w3-black w3-section w3-padding" type="submit">로그인</button>
           <input class="w3-check w3-margin-top" type="checkbox" checked="checked">로그인 기억하기
@@ -107,7 +120,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
       <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
         <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button w3-black">취소</button>
-        <span class="w3-right w3-padding w3-hide-small"> <a href="#">비밀번호</a>를 잊으셨나요?</span>
+        <span class="w3-right w3-padding w3-hide-small"><a href="index.jsp?select=join">회원가입</a>&nbsp;&nbsp;&nbsp; <a href="#">비밀번호</a>를 잊으셨나요?</span>
       </div>
 
     </div>

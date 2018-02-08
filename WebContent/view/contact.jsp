@@ -21,42 +21,25 @@
   
     <h2 class="w3-wide w3-center">LOCATION</h2>
   <!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
- <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=xm944b522PyYNyRsbkyl&submodules=geocoder"></script>
-<script>
-      var map = new naver.maps.Map('map');
-      var myaddress = '서울특별시 마포구 월드컵북로 21';// 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
-      naver.maps.Service.geocode({address: myaddress}, function(status, response) {
-          if (status !== naver.maps.Service.Status.OK) {
-              return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
-          }
-          var result = response.result;
-          // 검색 결과 갯수: result.total
-          // 첫번째 결과 결과 주소: result.items[0].address
-          // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
-          var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
-          map.setCenter(myaddr); // 검색된 좌표로 지도 이동
-          // 마커 표시
-          var marker = new naver.maps.Marker({
-            position: myaddr,
-            map: map
-          });
-          // 마커 클릭 이벤트 처리
-          naver.maps.Event.addListener(marker, "click", function(e) {
-            if (infowindow.getMap()) {
-                infowindow.close();
-            } else {
-                infowindow.open(map, marker);
-            }
-          });
-          // 마크 클릭시 인포윈도우 오픈
-          var infowindow = new naver.maps.InfoWindow({
-              content: '<h4> [네이버 개발자센터]</h4><a href="https://developers.naver.com" target="_blank"><img src="https://developers.naver.com/inc/devcenter/images/nd_img.png"></a>'
-          });
-      });
-      </script>
-      
-      <script type="text/javascript" src="http://openapi.map.naver.com/openapi/v3/maps.js?clientId={xm944b522PyYNyRsbkyl}"></script>
+ <center> <div class="w3-container w3-content">
+<table cellpadding="0" cellspacing="0" width="462"> <tr> <td style="border:1px solid #cecece;">
+<a href="https://map.naver.com/index.nhn?searchCoord=232c32cf1f846a336b96c00355ccb2e37c69bb19dc8b502844b52d6fe0b77d49&query=7ZKN7ISx67mM65Sp&tab=1&lng=7bcc7943657b5a5644879ef46a7310bf&mapMode=0&mpx=09410114%3A37.5655303%2C126.9413606%3AZ11%3A0.0344613%2C0.0142584&lat=6064208bd53ffda4b683c0a701e14552&dlevel=12&enc=b64&menu=location" 
+target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1518060235025_1798109639" 
+width="460" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" 
+style="vertical-align:top;"/></a></td> </tr> <tr> <td> 
+<table cellpadding="0" cellspacing="0" width="100%"> <tr> 
+<td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px;
+ border-left:1px solid #cecece; border-bottom:1px solid #cecece;"> 
+ <span style="font-family: tahoma; font-size: 11px; color:#666;">2018.2.8</span>
+ &nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;
+ <a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" 
+ href="https://map.naver.com/index.nhn?searchCoord=232c32cf1f846a336b96c00355ccb2e37c69bb19dc8b502844b52d6fe0b77d49&query=7ZKN7ISx67mM65Sp&tab=1&lng=7bcc7943657b5a5644879ef46a7310bf&mapMode=0&mpx=09410114%3A37.5655303%2C126.9413606%3AZ11%3A0.0344613%2C0.0142584&lat=6064208bd53ffda4b683c0a701e14552&dlevel=12&enc=b64&menu=location" 
+ target="_blank">지도 크게 보기</a> </td> <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; 
+ border-right:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="float:right;"><span style="font-size:9px;
+  font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; 
+  color:#2db400; text-decoration:none;" href="http://www.nhncorp.com" target="_blank">NAVER Corp.</a></span> </td> </tr> </table> </td>
+   </tr> </table>
+</div></center>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

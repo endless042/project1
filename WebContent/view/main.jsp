@@ -52,7 +52,7 @@
     </div>
  
   <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
+  <div class="w3-row ">
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
@@ -75,15 +75,16 @@
         </div>
         <p>Mega Ripped Jeans<br><b>$19.99</b></p>
       </div>
-      <div class="w3-container">
+      <div class="w3-container w3-grayscale">
         <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
         <p>Washed Skinny Jeans<br><b>$20.50</b></p>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
-      <div class="w3-container">
+      <div class="w3-container w3-grayscale">
         <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
+        
         <p>Washed Skinny Jeans<br><b>$20.50</b></p>
       </div>
       <div class="w3-container">

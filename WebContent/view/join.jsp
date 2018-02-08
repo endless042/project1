@@ -15,45 +15,81 @@
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
   <!--  -->
+   <header class="w3-container w3-xlarge">
+    <p class="w3-left">회원가입</p>
+  </header>
   
-  
-<div class="w3-container" style="max-width:600px">
-  <form class="w3-container w3-card-1" action="/action_page.php">
-  <h2 class="w3-text">회원가입</h2>
-  <p>Use any of the w3-text-color classes to color your labels.</p>
-  <p>      
-  <label ><b>First Name</b></label>
-  <input class="w3-input w3-border" name="first" type="text"></p>
-  <p>      
-  <label ><b>Last Name</b></label>
-  <input class="w3-input w3-border" name="last" type="text"></p>
-  <p>      
-  <button class="w3-button w3-white w3-border">Register</button></p>
-</form>
+<div class="w3-container" >
+  <form class="w3-container " action="joinPro.jsp">
+ <hr>
+  <p>  <b><font color="red">*</font></b> 표시가 된 항목은 필수 입력입니다.</p>
+  <p> 
+  <div class="w3-row-padding">
+  <div class="w3-half">
+    <label><b>NAME OR NICKNAME <font color="red">*</font> </b></label>
+    <input class="w3-input w3-border" name="name" type="text" placeholder="이름"  required="required">
+  </div>
+  <div class="w3-half">
+    <br>
+    <input class="w3-button w3-border" type="button" value="버튼">
+  </div>
 </div>
+<!-- 
+    <div class="w3-row-padding">
+  <div class="w3-half">
+  <label ><b>ID <font color="red">*</font></b></label>
+      <input class="w3-input w3-border" name="id" type="text" placeholder="아이디" style="max-width:250px" required="required"> </p>
+  </div>
+  <div class="w3-half">
+    <br>
+    <input class="w3-button w3-border" type="button" value="버튼">
+  </div>
+  </div>
+    <div class="w3-row-padding">
+  <div class="w3-half">
+ <p> <label ><b>PASSWORD <font color="red">*</font></b></label>
+  <input class="w3-input w3-border" name="pwd" type="password" placeholder="비밀번호" style="max-width:250px" required="required"></p>
+  </div>
+  </div>
+    <div class="w3-row-padding">
+  <div class="w3-half">
+  <p> <label ><b>BIRTHDATE <font color="red">*</font></b></label>
+  <input class="w3-input w3-border" name="bdate" type="date"  style="max-width:350px" required="required"></p>
+  </div>
+  </div>
+    <div class="w3-row-padding">
+  <div class="w3-col">
+   <p> <label ><b>ADDRESS</b></label>
+  <input class="w3-input w3-border" name="addr" type="text" placeholder="주소" style="max-width:600px"></p>
+  </div>
+  </div>
+    <div class="w3-row-padding">
+  <div class="w3-col">
+   <p> <label ><b>TEL</b></label>
+  <input class="w3-input w3-border" name="tel" type="text" placeholder="전화번호" style="max-width:600px"></p>
+  </div>
+  </div>
+   <div class="w3-row-padding">
+  <div class="w3-col">
+   <p> <label ><b>EMAIL <font color="red">*</font></b></label>
+  <input class="w3-input w3-border" name="email" type="email" placeholder="이메일" style="max-width:600px"></p>
+  </div>
+  </div>
   
-  
-  <!-- 
-<form class="w3-container">
-  
-  <p><label><b>ID</b></label>
-  <input class="w3-input w3-border" name="id" type="text" placeholder="아이디 입력" ></p>
 
-  <p><label ><b>PASSWORD</b></label>
-  <input class="w3-input w3-border" name="pwd" type="password" placeholder="비밀번호 입력" ></p>
-  <p><label><b>EMAIL</b></label>
-  <input class="w3-input w3-border" name="email" type="text" placeholder="이메일 입력" ></p>
-  <p><label><b>ADDRESS</b></label>
-  <input class="w3-input w3-border" name="addr" type="text" placeholder="주소 입력"></p>
-  <br><br>
-  <div class="w3-center" style="padding-bottom:40px;">
-  <input type="submit" class="w3-button w3-white w3-border" value="회원가입">&nbsp;&nbsp;&nbsp;
-<input type="button" class="w3-button w3-white w3-border" value="취소">
-<br><br>
+ <hr>
+ 
+   <div class="w3-row-padding">
+  <div class="w3-third">
+   <button class="w3-button w3-black " onclick="history.go(-1)">뒤로</button>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="w3-button w3-black " value="확인"><br><br></p>
+  </div>
+  </div>
+   -->
+ 
+</form>
 </div>
   
-</form>
- -->
+  
 
 
 
