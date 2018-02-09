@@ -63,7 +63,7 @@ public class UserlistDBBean {
 			PreparedStatement pstmt=null;
 			ResultSet rs=null;
 			
-			int number=1;
+			int number=0;
 			Date bd=null;
 		
 		try {

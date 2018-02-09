@@ -16,16 +16,26 @@
    <header class="w3-container w3-xlarge">
     <p class="w3-left">회원가입</p>
   </header>
-  
-<div class="w3-container" >
+ 
+<div class="w3-container w3-center " style="margin-bottom: 150px;" width="100%">
   
  <hr>
-  <p>  <b><font color="red">*</font></b> 회원가입 완료</p>
+ <center>
+ <table class="w3-border w3-center w3-padding" style="margin-top: 50px;" width="50%" ><tr class="w3-center" height="100px"><td>회원가입이 완료되었습니다.</td></tr>
+ <tr><td>
+ <div class="w3-bar w3-white">
+ <input type="button" onclick="location.href='index.jsp'" class="w3-button w3-black" value="메인으로">
+ </div>
+ </td></tr>
+ 
+ </table>
+   </center>
 
-  <p> 
+ 
   
 </div>
-  
+
+ 
   
 
 

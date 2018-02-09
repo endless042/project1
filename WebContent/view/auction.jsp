@@ -41,7 +41,7 @@
   <div class="w3-row w3-grayscale">
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
+        <a href="index.jsp?select=aproductview"><img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%"></a>
         <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
       </div>
       <div class="w3-container">

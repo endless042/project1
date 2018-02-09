@@ -101,7 +101,9 @@
  
    <div class="w3-row-padding">
   <div class="w3-third">
-   <button class="w3-button w3-black " onclick="history.go(-1)">뒤로</button>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="w3-button w3-black " value="확인"><br><br></p>
+   <button class="w3-button w3-black w3-margin-right" onclick="history.go(-1)">뒤로</button>
+    <input type="reset" class="w3-button w3-black w3-margin-right" value="다시작성">
+   <input type="submit" class="w3-button w3-black w3-margin-right" value="확인"><br><br></p>
   </div>
   </div>
   
