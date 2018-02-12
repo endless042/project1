@@ -7,7 +7,13 @@
 		select="main";
 	}
 	System.out.println(select);
+	
+	  
+	    
 %>
+ <%String pageNum=request.getParameter("pageNum");
+     if(pageNum==null||pageNum==""){
+    	pageNum="1";}%>
 <html>
 
 
@@ -20,5 +26,6 @@
 <jsp:include page="menu.jsp"/>
 
 <jsp:include page='<%=select+".jsp" %>'/>
+
 </body>
 </html>

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ 
 <html>
 <title>Plant shop</title>
 <meta charset="UTF-8">
 
 
-
+   <%
+    String id=(String)session.getAttribute("loginId");
+    	System.out.println(id);
+    	boolean login = (id==null?false:true);
+    %>
 
 
 <!-- !PAGE CONTENT! -->
@@ -19,7 +24,7 @@
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">메인 화면</p>
-    <p class="w3-right">
+    <p class="w3-right"><%if(login){%><%=id %>님 환영합니다.&nbsp;&nbsp;<%} %>
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
     </p>

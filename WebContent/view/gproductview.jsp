@@ -97,7 +97,7 @@
   </div>
 
 
-<div class="w3-bar w3-border">
+<div class="w3-bar w3-border" >
   <a href="#" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
   <a href="#" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
   <a href="#" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>

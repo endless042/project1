@@ -2,6 +2,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <% String select=request.getParameter("select"); %>
+       <%
+    String id=(String)session.getAttribute("loginId");
+    String levelCk=(String)session.getAttribute("levelCk");
+    	boolean login = (id==null?false:true);
+    %>
 <html>
 <title>Plant shop</title>
 <meta charset="UTF-8">
@@ -54,9 +59,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     
    
   </div>
- 
+ <% if (!login){%>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('login').style.display='block'">로그인</a>
-   <a href="<%= request.getContextPath() %>/view/index.jsp?select=join" class="w3-bar-item w3-button w3-padding">회원가입</a>  
+   <a href="<%= request.getContextPath() %>/view/index.jsp?select=join" class="w3-bar-item w3-button w3-padding">회원가입</a>  <%}else{
+   
+   	if(levelCk.equals("0")){%> <a href="<%= request.getContextPath() %>/view/index.jsp?select=admin" class="w3-bar-item w3-button w3-padding">관리자 페이지</a>
+	   <a href="<%= request.getContextPath() %>/view/logoutPro.jsp" class="w3-bar-item w3-button w3-padding">로그아웃</a><%}else{ %>
+	    <a href="<%= request.getContextPath() %>/view/index.jsp" class="w3-bar-item w3-button w3-padding">마이페이지</a>
+	   <a href="<%= request.getContextPath() %>/view/logoutPro.jsp" class="w3-bar-item w3-button w3-padding">로그아웃</a>
+	   <%}}%>
+   
       
   <a href="<%= request.getContextPath() %>/view/index.jsp?select=contact" class="w3-bar-item w3-button w3-padding">ABOUT US</a> 
  <br><br>
@@ -94,12 +106,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         
       </div>
 
-      <form class="w3-container" action="/action_page.php">
+      <form class="w3-container" action="loginPro.jsp">
         <div class="w3-section">
           <label><b>ID</b></label>
-          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="아이디를 입력하세요." name="usrname" required>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="아이디를 입력하세요." name="id" required>
           <label><b>PASSWORD</b></label>
-          <input class="w3-input w3-border" type="password" placeholder="비밀번호를 입력하세요." name="psw" required>
+          <input class="w3-input w3-border" type="password" placeholder="비밀번호를 입력하세요." name="pwd" required>
           <button class="w3-button w3-block w3-black w3-section w3-padding" type="submit">로그인</button>
           <input class="w3-check w3-margin-top" type="checkbox" checked="checked">로그인 기억하기
         </div>

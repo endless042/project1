@@ -20,7 +20,7 @@
   </header>
   
 <div class="w3-container" >
-  <form class="w3-container " action="joinPro.jsp">
+  <form class="w3-container"  action="joinPro.jsp">
 
  
   <p>  <b><font color="red">&nbsp;&nbsp;&nbsp;*</font></b> 표시가 된 항목은 필수 입력입니다.</p>
@@ -102,7 +102,7 @@
    <div class="w3-row-padding">
   <div class="w3-third">
    <button class="w3-button w3-black w3-margin-right" onclick="history.go(-1)">뒤로</button>
-    <input type="reset" class="w3-button w3-black w3-margin-right" value="다시작성">
+    <input type="reset" class="w3-button w3-black w3-margin-right" value="재작성">
    <input type="submit" class="w3-button w3-black w3-margin-right" value="확인"><br><br></p>
   </div>
   </div>
