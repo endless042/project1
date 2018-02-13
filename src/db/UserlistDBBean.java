@@ -203,8 +203,8 @@ public List getUsers(int startRow, int endRow) {
 			con=getConnection();
 			sql="select * from (" + 
 					"select rownum rum , b.* from (" + 
-					"select a.* from userlist a  ORDER BY cdate DESC) b)" + 
-					"where rum between ? and ?";
+					"select a.* from userlist a  ORDER BY cdate DESC, ulevel asc) b)" + 
+					"where rum between ? and ? ORDER BY ulevel asc, cdate DESC";
 			
 			
 				pstmt=con.prepareStatement(sql);
@@ -267,6 +267,72 @@ public int getUserCount (String ulevel){
 	}
 	return x;
 }
+
+
+public int deleteUser(String id, String pwd) throws Exception {
+	
+	
+	Connection con=null;
+	PreparedStatement pstmt=null;
+	ResultSet rs=null;
+	String sql="delete from userlist where id=? and pwd=?";
+	
+	int x=-1;
+	try {
+
+		con=getConnection();
+		
+		pstmt=con.prepareStatement(sql);
+		
+		pstmt.setString(1, id);
+		pstmt.setString(2,pwd);
+		x=pstmt.executeUpdate();
+		
+	
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			close(con, rs, pstmt);
+		}
+		
+	return x;
+	
+	
+}
+
+public int updateUser(UserlistDataBean user) {
+	
+	String sql="";
+	Connection con=getConnection();
+	PreparedStatement pstmt=null;
+	
+	int chk=0;
+	try {
+
+		sql="update userlist set name=?, bdate=?, addr=?, tel=?, email=?, ulevel=? where id=? and passwd=?";
+		
+		pstmt=con.prepareStatement(sql);
+		pstmt.setString(1, article.getWriter());
+		pstmt.setString(2, article.getEmail());
+		pstmt.setString(3, article.getSubject());
+		pstmt.setString(4, article.getContent());
+		pstmt.setInt(5, article.getNum());
+		pstmt.setString(6,article.getPasswd());
+		
+		chk=pstmt.executeUpdate(); 	//몇 개의 행이 업데이트되었는지 int로 반환 (1이면 성공,0이면 실패)
+		
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			close(con, null, pstmt);
+			
+			
+		}
+		
+	return chk;
+}
+
 }
 			
 

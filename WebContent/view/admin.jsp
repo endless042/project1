@@ -1,60 +1,28 @@
 <!DOCTYPE html>
+<%@page import="db.UserlistDataBean"%>
+<%@page import="db.UserlistDBBean"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%String pageNum=request.getParameter("pageNum");
-     if(pageNum==null||pageNum==""){
-    	pageNum="1";}%>
-<html>
-<title>Plant shop</title>
-<meta charset="UTF-8">
-<% 
-String id=(String)session.getAttribute("loginId");
-String levelCk=(String)session.getAttribute("levelCk");
-if(!levelCk.equals("0")){%>
-<script>
-alert("접근 권한이 없습니다.");
-history.go(-1);		//바로 전 화면으로 이동(updateForm.jsp)
-</script>
-
-<%} %>
-<jsp:include page="menu.jsp"/>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  <!--  -->
-   <header class="w3-container w3-xlarge">
-    <p class="w3-left">관리자 페이지</p>
-  </header>
- 
-
-<div class="w3-container w3-padding-64" width="100%"  >
-  
-
- <div class="w3-card-4 w3-center w3-padding-24"  style="max-width:900px" >
-      
- 
-  
-  
-    <div class="w3-bar w3-border" style="max-width:900px; width:90%;">
-    <button style="width:25%" class="w3-bar-item w3-button tablink w3-green " onclick="openAdminPage(event,'userlist')">회원목록</button>
-    <button style="width:25%" class="w3-bar-item w3-button tablink w3-hide-small" onclick="openAdminPage(event,'auction')">경매</button>
-    <button style="width:25%" class="w3-bar-item w3-button tablink w3-hide-small" onclick="openAdminPage(event,'gpurchase')">공동구매</button>
-         <button style="width:25%" class="w3-bar-item w3-button tablink w3-hide-small" onclick="openAdminPage(event,'board1')">게시판</button>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-  </div>
-  <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-  <a href="#"  onclick="openAdminPage(event,'auction')" class="w3-bar-item w3-button">경매</a>
-  <a href="#" onclick="openAdminPage(event,'gpurchase')" class="w3-bar-item w3-button">공동구매</a>
-  <a href="#" onclick="openAdminPage(event,'board1')" class="w3-bar-item w3-button">게시판</a>
-</div>
+    <%
+    
+    String mid=request.getParameter("mid");
+    String mpwd=request.getParameter("mpwd");
+    %>
+    
+     <jsp:include page="adminheader.jsp"></jsp:include>
   
   <div id="userlist" class="w3-container   admin">
-    <jsp:include page="admin_userlist.jsp"></jsp:include>
+ 
+    <% if(mid!=null&&mpwd!=null){ %>
+    <jsp:include page="admin_userModify.jsp"></jsp:include>
+    sdgsdgsgdhedher23525
+    <%}else { %>
     
+    <jsp:include page="admin_userlist.jsp"></jsp:include>
+    <%} %>
+  
+	
   </div>
 
   <div id="auction" class="w3-container  admin" style="display:none">
@@ -72,7 +40,15 @@ history.go(-1);		//바로 전 화면으로 이동(updateForm.jsp)
     <p>게시판  관리자 페이지</p>
   </div>
   
+     <div id="userModify" class="w3-container  admin" style="display:none">
    
+  <jsp:include page="admin_userModify.jsp"/>
+   
+   
+    
+   
+    
+  </div>
   </div>
 
 </div>

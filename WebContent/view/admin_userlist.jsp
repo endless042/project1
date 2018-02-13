@@ -31,17 +31,17 @@
     		
     	
     	%>
-    	<table class="w3-table w3-bordered w3-hoverable" width="90%">
-    	<tr class="w3-grey">
-    	<td align="center">회원이 없습니다.</td>
+    	<table class="w3-table w3-border w3-hoverable w3-center" width="90%">
+    	<tr class="w3-light-grey">
+    	<td class="w3-center">회원이 없습니다.</td>
     	
     	</table><% }else{ %>
     	<table class="w3-table w3-bordered w3-hoverable" width="90%">
     	<tr class="w3-light-grey">
-    	<td class="w3-center" width="15%"><b>회원번호</b></td>
-    	<td class="w3-center" width="15%"><b>레벨</b></td>
-    	<td class="w3-center" width="15%"><b>아이디</b></td>
-    	<td class="w3-center" width="10%"><b>이름</b></td>
+    	<td class="w3-center" width="10%"><b>회원번호</b></td>
+    	<td class="w3-center" width="10%"><b>레벨</b></td>
+    	<td class="w3-center" width="20%"><b>아이디</b></td>
+    	<td class="w3-center" width="15%"><b>이름</b></td>
     	<td class="w3-center" width="20%"><b>가입일</b></td>
     	<td class="w3-center" width="25%"><b>관리</b></td>
     
@@ -55,14 +55,20 @@
     			<td class="w3-center" ><%=user.getName()%></td>
     			<td class="w3-center" ><%=user.getCdate()%></td>
     			<td class="w3-center" >
-    			<button class="w3-button w3-padding-small w3-black w3-hover-green w3-small">수정</button>
-    			&nbsp;<button class="w3-padding-small w3-hover-red w3-button w3-small w3-black">탈퇴</button></td>
+    			<form method="post" action="admin_userModify.jsp"><input type="hidden" name="mid" value="<%= user.getId()%>">
+    			<input type="hidden" name="mpwd" value="<%=user.getPwd() %>">
+    			<button class="w3-button w3-padding-small w3-black tablink w3-hover-green w3-small" 
+    			type="submit" onclick="openAdminPage(event,'userModify')">수정</button>
+    			<form method="post" action="deleteUserPro.jsp"><button class="w3-padding-small w3-hover-red
+    			 w3-button w3-small w3-black" type="submit" >탈퇴</button>
+    			<input type="hidden" name="id" value="<%= user.getId()%>">
+    			<input type="hidden" name="pwd" value="<%=user.getPwd() %>"></form></td>
 
     		</tr>
     		<%} %>
     </table>
     
-    
+    <div class="w3-section">
     <% int bottomLine=5;
     	
     	if(count>0){
@@ -73,39 +79,28 @@
     		if(endPage>pageCount)endPage=pageCount;
     	
     		if(startPage>bottomLine){%>
-    		<a href="index.jsp?select=admin&pageNum=<%=startPage-bottomLine %>">[이전]</a>
+    		<a href="index.jsp?select=admin&pageNum=<%=startPage-bottomLine %>" class="w3-bar-item w3-button w3-hover-black">«</a>
     		<%} %>
     	
     		<%
-    		for(int i=startPage;i<=endPage;i++){%>
-    		<a href="index.jsp?select=admin&pageNum=<%=i %>">
-    		<% 
-    		if(i!=currentPage) out.print("["+i+"]");
-    		else out.print("<font color='red'>["+i+"]</font>");%></a>
+    		for(int i=startPage;i<=endPage;i++){
+    		 
+    		if(i!=currentPage) { %>
+    		<a href="index.jsp?select=admin&pageNum=<%=i %>" class="w3-bar-item w3-button w3-hover-black"><%=i %></a>
     		<%}
-    	
+    		else  {%>
+    		<a href="index.jsp?select=admin&pageNum=<%=i %>" class="w3-bar-item w3-black w3-button"><%=i %></a>
+    		
+    		
+    		<%}
     	
     		if(endPage<pageCount){
     		%>
-    		<a href="index.jsp?select=admin&pageNum=<%=startPage+bottomLine %>">[다음]</a>
-    			<% }	
-    	
-    	} %>
-    	
-    	
-     <!-- Pagination -->
-  <div class="w3-center w3-section">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-    
-    
-    	<%
+    		<a href="index.jsp?select=admin&pageNum=<%=startPage+bottomLine %>" class="w3-bar-item w3-button w3-hover-black">»</a>
+    			<%} }	
+    		} 
+    		%>
+    		</div>
+    		<%
     	}
     	%>

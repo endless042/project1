@@ -14,6 +14,9 @@
  <%String pageNum=request.getParameter("pageNum");
      if(pageNum==null||pageNum==""){
     	pageNum="1";}%>
+    	
+    	<% String mid=request.getParameter("mid");
+    		String mpwd=request.getParameter("mpwd");%>
 <html>
 
 

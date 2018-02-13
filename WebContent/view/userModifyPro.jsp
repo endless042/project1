@@ -1,0 +1,47 @@
+
+<%@page import="db.UserlistDBBean"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <% request.setCharacterEncoding("utf-8"); %>
+     
+   
+     <jsp:useBean id="user" class="db.UserlistDataBean">
+<jsp:setProperty name="user" property="*"/>
+</jsp:useBean>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<% System.out.println(user); %>
+
+<%
+
+UserlistDBBean userPro = UserlistDBBean.getInstance(); 
+
+	int chk=userPro.updateUser(user);
+	
+
+%>
+
+<%
+	if(chk==1){
+	
+	%>
+	<meta http-equiv="Refresh" content="0;url=content.jsp?num=<%=article.getNum() %>&pageNum=<%=pageNum %>">
+	
+	<%}else{ %>
+		<script>
+		alert("비밀번호가 맞지 않습니다");
+		history.go(-1);		//바로 전 화면으로 이동(updateForm.jsp)
+		</script>
+	<%} %>
+
+
+
+
+</body>
+</html>

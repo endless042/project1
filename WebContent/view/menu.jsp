@@ -63,7 +63,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('login').style.display='block'">로그인</a>
    <a href="<%= request.getContextPath() %>/view/index.jsp?select=join" class="w3-bar-item w3-button w3-padding">회원가입</a>  <%}else{
    
-   	if(levelCk.equals("0")){%> <a href="<%= request.getContextPath() %>/view/index.jsp?select=admin" class="w3-bar-item w3-button w3-padding">관리자 페이지</a>
+   	if(levelCk.equals("0")){%> <a href="<%= request.getContextPath() %>/view/admin.jsp" class="w3-bar-item w3-button w3-padding">관리자 페이지</a>
 	   <a href="<%= request.getContextPath() %>/view/logoutPro.jsp" class="w3-bar-item w3-button w3-padding">로그아웃</a><%}else{ %>
 	    <a href="<%= request.getContextPath() %>/view/index.jsp" class="w3-bar-item w3-button w3-padding">마이페이지</a>
 	   <a href="<%= request.getContextPath() %>/view/logoutPro.jsp" class="w3-bar-item w3-button w3-padding">로그아웃</a>
