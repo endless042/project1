@@ -14,6 +14,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>게시판</title>
+<style type="text/css">
+a {
+text-decoration: none;
+}
+</style>
 </head>
 <body>
 
@@ -22,13 +27,22 @@
 <div class="w3-main" style="margin-left:250px">
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">소식</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
 
  
     <% String boardid=request.getParameter("boardid");
     if(boardid==null) boardid="1";
     
     %>
-    <% int pageSize=5;
+    <% int pageSize=10;
     SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
     String pageNum=request.getParameter("pageNum");
     if(pageNum==null||pageNum==""){
@@ -55,10 +69,8 @@
     <p class="w3-left" style="padding-left:30px;">
     </p>
     
-    <div class="w3-container ">
-    	<span class="w3-center w3-large">
-    		<h3><%=boardid%>(전체글:<%=count %>)</h3>
-    	</span>
+    <div class="w3-container w3-padding-64">
+ 
     	<p class="w3-right w3-padding-right-large">
     	<a href="writeForm.jsp">글쓰기</a>
     	</p>
@@ -68,14 +80,15 @@
     		
     	
     	%>
-    	<table class="w3-table w3-bordered w3-hoverable" width="700">
+    	<table class="w3-table w3-bordered w3-hoverable" width="80%">
     	<tr class="w3-grey">
     	<td align="center">게시판에 저장된 글이 없습니다.</td>
     	
     	</table>
     	
     	<% }else{ %>
-    	<table class="w3-table w3-bordered w3-hoverable" width="700">
+    	(전체글:<%=count %>)
+    	<table class="w3-table w3-bordered w3-hoverable" width="80%">
     	<tr class="w3-light-grey">
     	<td class="w3-center" width="50"><b>번호</b></td>
     	<td class="w3-center" width="250"><b>제목</b></td>
@@ -93,15 +106,13 @@
     			wid=15*(article.getRe_level());
     			
     			%><img src="../../images/level.gif" width="<%=wid %>" height="16">
-    			<img src="../../images/re.gif">
+    			└
     			<% }else{
     				
     				%> <img src="../../images/level.gif" width="<%=wid %>" height="16">
     				
     				<%} %> <a href="content.jsp?num=<%=article.getNum() %>&pageNum=<%=currentPage %>">
-    				<%=article.getSubject() %></a><%
-    				if(article.getReadcount()>=20){
-    				%><img src="../../images/hot.gif" border="0" height="16"><%} %></td>
+    				<%=article.getSubject() %></a> </td>
     				<td class="w3-center" width="100"><%=article.getWriter() %></td>
     				<td class="w3-center" width="150">
     				<%=sdf.format(article.getReg_date()) %></td>
@@ -118,7 +129,7 @@
     	<%} %>
     	
     	<!-- 하단 페이징  -->
-    	<div class="w3-center">
+    	<div class="w3-center w3-section">
     	<% int bottomLine=3;
     	
     	if(count>0){

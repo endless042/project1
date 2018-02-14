@@ -55,10 +55,15 @@
     			<td class="w3-center" ><%=user.getName()%></td>
     			<td class="w3-center" ><%=user.getCdate()%></td>
     			<td class="w3-center" >
+    			
+    			
     			<form method="post" action="admin_userModify.jsp"><input type="hidden" name="mid" value="<%= user.getId()%>">
     			<input type="hidden" name="mpwd" value="<%=user.getPwd() %>">
+    			<input type="hidden" name="pageNum" value="<%= pageNum%>">
     			<button class="w3-button w3-padding-small w3-black tablink w3-hover-green w3-small" 
     			type="submit" onclick="openAdminPage(event,'userModify')">수정</button>
+    			
+    			
     			<form method="post" action="deleteUserPro.jsp"><button class="w3-padding-small w3-hover-red
     			 w3-button w3-small w3-black" type="submit" >탈퇴</button>
     			<input type="hidden" name="id" value="<%= user.getId()%>">
@@ -68,6 +73,7 @@
     		<%} %>
     </table>
     
+    <!-- 하단 페이징    -->
     <div class="w3-section">
     <% int bottomLine=5;
     	

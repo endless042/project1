@@ -28,13 +28,13 @@
 	
 	
 
- <!--  <jsp-config>
+ <jsp-config>
 		<jsp-property-group>
 			<url-pattern>/view/board/*</url-pattern> 
 			<include-prelude>/view/menu.jsp</include-prelude> 
 		</jsp-property-group> 
 	</jsp-config>
- -->
+
 	
 	
 	

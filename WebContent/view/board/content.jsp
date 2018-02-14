@@ -33,10 +33,22 @@
 		%>
 	
 
-<body><center><h2 class="w3-wide w3-center">글 내용 보기</h2>
+<body><!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">소식</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header><center><h2 class="w3-wide w3-center">글 내용 보기</h2>
 
 <div class="container w3-responsive">
-<table class="w3-table w3-bordered  w3-striped" style="width: 80%; ">
+<table class="w3-table w3-bordered " style="width: 80%; ">
 
 <tr height="30" >
 <td width="125" align="center"><b>글번호</b></td>

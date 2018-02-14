@@ -16,29 +16,37 @@
 </head>
 <body>
 
-<% System.out.println(user); %>
+
 
 <%
 
-UserlistDBBean userPro = UserlistDBBean.getInstance(); 
 
-	int chk=userPro.updateUser(user);
-	
+
+	try{
+		UserlistDBBean userPro = UserlistDBBean.getInstance(); 
+		int chk=userPro.updateUser(user);
+	String id=request.getParameter("id");
+	String pwd=request.getParameter("pwd");
 
 %>
 
 <%
+	System.out.println(chk);
 	if(chk==1){
 	
-	%>
-	<meta http-equiv="Refresh" content="0;url=content.jsp?num=<%=article.getNum() %>&pageNum=<%=pageNum %>">
+	 System.out.println("userModify "+user); %>
+	<script>
+		alert("정보 수정 완료");
+		</script>
+	<meta http-equiv="Refresh" content="0;url=admin_userModify.jsp?id=<%=id%>&pwd=<%=pwd%>">
 	
 	<%}else{ %>
 		<script>
-		alert("비밀번호가 맞지 않습니다");
+		alert("정보 수정 오류");
 		history.go(-1);		//바로 전 화면으로 이동(updateForm.jsp)
 		</script>
-	<%} %>
+	<%} 
+	}catch(Exception e){e.printStackTrace();}%>
 
 
 

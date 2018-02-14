@@ -204,7 +204,7 @@ public List getUsers(int startRow, int endRow) {
 			sql="select * from (" + 
 					"select rownum rum , b.* from (" + 
 					"select a.* from userlist a  ORDER BY cdate DESC, ulevel asc) b)" + 
-					"where rum between ? and ? ORDER BY ulevel asc, cdate DESC";
+					"where rum between ? and ? ORDER BY  cdate DESC, num desc";
 			
 			
 				pstmt=con.prepareStatement(sql);
@@ -310,15 +310,19 @@ public int updateUser(UserlistDataBean user) {
 	int chk=0;
 	try {
 
-		sql="update userlist set name=?, bdate=?, addr=?, tel=?, email=?, ulevel=? where id=? and passwd=?";
+		sql="update userlist set name=?, bdate=?, addr=?, tel=?, email=?, ulevel=? where id=? and pwd=?";
 		
 		pstmt=con.prepareStatement(sql);
-		pstmt.setString(1, article.getWriter());
-		pstmt.setString(2, article.getEmail());
-		pstmt.setString(3, article.getSubject());
-		pstmt.setString(4, article.getContent());
-		pstmt.setInt(5, article.getNum());
-		pstmt.setString(6,article.getPasswd());
+		pstmt.setString(1, user.getName());
+		pstmt.setString(2, user.getBdate());
+		pstmt.setString(3, user.getAddr());
+		pstmt.setString(4, user.getTel());
+		pstmt.setString(5, user.getEmail());
+		pstmt.setString(6,user.getUlevel());
+		pstmt.setString(7, user.getId());
+		pstmt.setString(8, user.getPwd());
+		
+		System.out.println(user.getName()+user.getBdate()+user.getAddr()+user.getTel()+user.getEmail()+user.getUlevel()+user.getId()+user.getPwd());
 		
 		chk=pstmt.executeUpdate(); 	//몇 개의 행이 업데이트되었는지 int로 반환 (1이면 성공,0이면 실패)
 		

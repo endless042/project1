@@ -1,3 +1,4 @@
+<%@page import="com.sun.org.apache.xml.internal.security.encryption.DocumentSerializer"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="db.UserlistDBBean"%>
@@ -14,29 +15,52 @@
 <title>Insert title here</title>
 </head>
 <body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+ $(function(){
+  $('#email_select').change(function(){
+   if($('#email_select').val() == "1"){
+    $("#last_email").val(""); //값 초기화
+    $("#last_email").prop("readonly",false); //활성화
+   } else if($('#email_select').val() == ""){
+    $("#last_email").val(""); //값 초기화
+    $("#last_email").prop("readonly",true); //textBox 비활성화
+   } else {
+    $("#last_email").val($('#email_select').val()); //선택값 입력
+    $("#last_email").prop("readonly",true); //비활성화
+   }
+  });
+ });
+ 
+
+</script>
 <jsp:useBean id="user" class="db.UserlistDataBean">
 <jsp:setProperty name="user" property="*"/>
 </jsp:useBean>
 
 <% 
-String[] tmp=request.getParameterValues("tel");
-String tel="";
 
-for(int i=0;i<tmp.length;i++){
-	tel+=tmp[i];
+String tel=request.getParameter("tel1")+request.getParameter("tel2")+request.getParameter("tel3");
+String email=request.getParameter("email1")+"@"+request.getParameter("email2");
+
+
+user.setTel(tel);
+if(email.equals("")||email.equals("@")||email==null){
+	email="미입력";
 }
 
-
-
-System.out.println(tel);
-
+user.setEmail(email);
 
 UserlistDBBean userPro= UserlistDBBean.getInstance(); 
 
+
+	
 	if(user.getTel()==null){
 		 user.setTel("미입력");		
 	}
-
+	if(user.getEmail()==null){
+		 user.setEmail("미입력");		
+	}
  
 	
 	if(user.getAddr()==null){
@@ -50,4 +74,6 @@ UserlistDBBean userPro= UserlistDBBean.getInstance();
 
 <%response.sendRedirect("index.jsp?select=joinComp"); %>
 </body>
+
 </html>
+
