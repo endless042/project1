@@ -26,8 +26,8 @@
         <div class="w3-section">
         
           회원가입이 완료되었습니다.<div style="margin-top:50px"></div>
-           <input type="button" onclick="location.href='index.jsp'" class="w3-button w3-black w3-margin-right" value="메인으로">
-  <input type="button" onclick="location.href='index.jsp?select=login'" class="w3-button w3-black" value="로그인하기">
+           <input type="button" onclick="location.href='main.jsp'" class="w3-button w3-black w3-margin-right" value="메인으로">
+  <input type="button" onclick="location.href='login.jsp'" class="w3-button w3-black" value="로그인하기">
         </div>
       </form>
 

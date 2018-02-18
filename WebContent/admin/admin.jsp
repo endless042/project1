@@ -16,7 +16,7 @@
  
     <% if(mid!=null&&mpwd!=null){ %>
     <jsp:include page="admin_userModify.jsp"></jsp:include>
-    sdgsdgsgdhedher23525
+    
     <%}else { %>
     
     <jsp:include page="admin_userlist.jsp"></jsp:include>

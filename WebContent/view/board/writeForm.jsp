@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+<%@ page language="java"
     pageEncoding="utf-8"%>
     <% request.setCharacterEncoding("utf-8"); %>
      <%
@@ -25,12 +25,32 @@
 <title>게시판</title>
 </head>
 <body>
-<p class="w3-left"  style="padding-left:30px;"></p>
-<center><div class="w3-container">
+
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">소식</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+
+<center><div class="w3-container" style="padding-bottom: 64px;">
 
  <h2 class="w3-wide w3-center">글쓰기</h2>
 <br>
-<form method="post" name="writeform" action="<%=request.getContextPath() %>/view/writePro.jsp" >
+<form method="post" name="writeform" action="<%=request.getContextPath() %>/view/board/writePro.jsp" >
 <input type="hidden" name="boardid" value="<%=boardid%>">
 <input type="hidden" name="num" value="<%=num%>">
 <input type="hidden" name="ref" value="<%=ref%>">
@@ -50,7 +70,8 @@
    <tr>
     <td  width="70"   align="center">이 름</td>
     <td  width="330">
-       <input type="text" size="10" maxlength="10" name="writer"></td>
+       <%=loginId %>
+       <input type="hidden" name="writer" value="<%=loginId%>">
   </tr>
   <tr>
     <td  width="70"   align="center" >제 목
@@ -93,6 +114,9 @@
 </form>   </div> </center>
 
 
+ 
+  <!-- End page content -->
+</div>
 
 
 </body>

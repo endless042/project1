@@ -204,7 +204,7 @@ public List getUsers(int startRow, int endRow) {
 			sql="select * from (" + 
 					"select rownum rum , b.* from (" + 
 					"select a.* from userlist a  ORDER BY cdate DESC, ulevel asc) b)" + 
-					"where rum between ? and ? ORDER BY  cdate DESC, num desc";
+					"where rum between ? and ? ORDER BY   num desc";
 			
 			
 				pstmt=con.prepareStatement(sql);
@@ -324,7 +324,7 @@ public int updateUser(UserlistDataBean user) {
 		
 		System.out.println(user.getName()+user.getBdate()+user.getAddr()+user.getTel()+user.getEmail()+user.getUlevel()+user.getId()+user.getPwd());
 		
-		chk=pstmt.executeUpdate(); 	//몇 개의 행이 업데이트되었는지 int로 반환 (1이면 성공,0이면 실패)
+		chk=pstmt.executeUpdate(); 	//紐� 媛쒖쓽 �뻾�씠 �뾽�뜲�씠�듃�릺�뿀�뒗吏� int濡� 諛섑솚 (1�씠硫� �꽦怨�,0�씠硫� �떎�뙣)
 		
 		}catch(SQLException e) {
 			e.printStackTrace();

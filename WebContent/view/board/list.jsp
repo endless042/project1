@@ -80,9 +80,9 @@ text-decoration: none;
     		
     	
     	%>
-    	<table class="w3-table w3-bordered w3-hoverable" width="80%">
-    	<tr class="w3-grey">
-    	<td align="center">게시판에 저장된 글이 없습니다.</td>
+    	<table class="w3-table w3-border w3-hoverable w3-center" width="90%">
+    	<tr class="w3-light-grey">
+    	<td class="w3-center">저장된 글이 없습니다.</td>
     	
     	</table>
     	
@@ -161,8 +161,7 @@ text-decoration: none;
     	
     	</div>
     	</div>
-    	 <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
-
+    	 
   <!-- End page content -->
 </div>
     	

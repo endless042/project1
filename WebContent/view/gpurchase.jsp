@@ -42,7 +42,7 @@
   <div class="w3-row w3-grayscale">
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <a href="index.jsp?select=gproductview"><img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%"></a>
+        <a href="gproductview.jsp"><img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%"></a>
         <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
       </div>
       <div class="w3-container">
@@ -112,7 +112,6 @@
   
 
 
- <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
 
   <!-- End page content -->
 </div>

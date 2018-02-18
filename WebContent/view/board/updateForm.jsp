@@ -29,8 +29,26 @@
 </head>
 <body>
 
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">소식</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
 <p class="w3-left"  style="padding-left:30px;"></p>
-<div class="w3-container">
+<div class="w3-container" style="padding-bottom: 64px;">
 
 <center><h2 class="w3-wide w3-center">글수정</h2>
 <br>
@@ -80,7 +98,7 @@
 	 </td>
   </tr>
 <tr>      
- <td colspan=2  align="center"> 
+ <td colspan=2  class="w3-center"> 
   <input type="submit" class="w3-button w3-hover-black" value="글수정" >  
   <input type="reset" class="w3-button w3-hover-black" value="다시작성">
   <input type="button" class="w3-button w3-hover-black" value="목록보기" OnClick="window.location='list.jsp'">
@@ -89,5 +107,8 @@
 </form>  </center></div>  
 <%}catch(Exception e){} %>
 
+ 
+  <!-- End page content -->
+</div>
 </body>
 </html>

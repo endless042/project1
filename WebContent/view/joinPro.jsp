@@ -72,7 +72,7 @@ UserlistDBBean userPro= UserlistDBBean.getInstance();
 	userPro.addUser(user);%>
 	
 
-<%response.sendRedirect("index.jsp?select=joinComp"); %>
+<%response.sendRedirect("joinComp.jsp"); %>
 </body>
 
 </html>

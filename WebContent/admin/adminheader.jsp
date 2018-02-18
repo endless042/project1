@@ -7,8 +7,12 @@
     <%String pageNum=request.getParameter("pageNum");
      if(pageNum==null||pageNum==""){
     	pageNum="1";}
-    	
-
+     String levelCk=(String)session.getAttribute("levelCk");
+     if(levelCk==null){
+    	 levelCk="1";
+    	 }
+     
+     
  	String mid=request.getParameter("mid");
      String mpwd=request.getParameter("mpwd");
      UserlistDBBean userPro=UserlistDBBean.getInstance();
@@ -18,18 +22,17 @@
 <title>Plant shop</title>
 <meta charset="UTF-8">
 <% 
-String id=(String)session.getAttribute("loginId");
-String levelCk=(String)session.getAttribute("levelCk");
+
 String modify="";
 if(!levelCk.equals("0")){%>
 <script>
 alert("접근 권한이 없습니다.");
-history.go(-1);		//바로 전 화면으로 이동(updateForm.jsp)
+history.go(-1);		
 </script>
 
 <%} %>
-<jsp:include page="menu.jsp"/>
 
+<jsp:include page="/menu.jsp"/>
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px">
 

@@ -14,12 +14,24 @@
 </head>
 <body>
 
-
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">소식</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
 <p class="w3-left" style="padding-left:30px;"></p>
 
 <center>
 
-<div class="w3-container">
+<div class="w3-container" style="padding-bottom: 64px;">
 	<h2 class="w3-wide w3-center">글 삭제</h2><br>
 	
 	<form method="post" name="delForm"  action="deletePro.jsp?pageNum=<%=pageNum %>" onsubmit="return deleteSave()">
@@ -43,5 +55,9 @@
 </div>
 
 </center>
+
+ 
+</div>
+
 </body>
 </html>

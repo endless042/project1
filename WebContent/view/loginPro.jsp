@@ -8,10 +8,12 @@
 <html>
 <head>
 
- <% request.setCharacterEncoding("utf-8"); %>
- <% String id=request.getParameter("id");
- 	String pwd=request.getParameter("pwd");%>
-   
+ <% request.setCharacterEncoding("utf-8"); 
+ 
+ String tryid=request.getParameter("tryid");
+ String trypwd=request.getParameter("trypwd");
+ %>
+
      
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
@@ -24,21 +26,22 @@
 
 UserlistDBBean userPro= UserlistDBBean.getInstance(); 
 
-
-int ck=userPro.loginCheck(id, pwd);
+System.out.println(tryid+" "+trypwd);
+int ck=userPro.loginCheck(tryid, trypwd);
 UserlistDataBean user=null;
+System.out.println(ck);
 	if(ck==-1){
 		%><script>
 alert("로그인에 실패하였습니다.");
 history.go(-1);		//바로 전 화면으로 이동(updateForm.jsp)
 </script><%
 	}else{
-		user=userPro.getUser(id, pwd);
+		user=userPro.getUser(tryid, trypwd);
 		
 				System.out.println("Login : "+user); 
-				session.setAttribute("loginId", id);
+				session.setAttribute("loginId", tryid);
 				session.setAttribute("levelCk", user.getUlevel());
-				%><meta http-equiv="Refresh" content="0;url=index.jsp?select=main "> 
+				%><meta http-equiv="Refresh" content="0;url=main.jsp"> 
 				
 				<%};
 	%>

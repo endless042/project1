@@ -20,7 +20,7 @@ session.invalidate();
 alert("성공적으로 로그아웃되었습니다.");
 
 </script><%
-response.sendRedirect("index.jsp?select=main");
+response.sendRedirect("main.jsp");
 %>
 
 

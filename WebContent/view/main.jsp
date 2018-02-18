@@ -7,11 +7,7 @@
 <meta charset="UTF-8">
 
 
-   <%
-    String id=(String)session.getAttribute("loginId");
-    	System.out.println(id);
-    	boolean login = (id==null?false:true);
-    %>
+ 
 
 
 <!-- !PAGE CONTENT! -->
@@ -24,7 +20,7 @@
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">메인 화면</p>
-    <p class="w3-right"><%if(login){%><%=id %>님 환영합니다.&nbsp;&nbsp;<%} %>
+    <p class="w3-right"><%if(login){%><%=loginId %>님 환영합니다.&nbsp;&nbsp;<%} %>
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
     </p>
@@ -132,8 +128,7 @@
   
 
 
- <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
-
+<%-- <jsp:include page="/footer.jsp"></jsp:include> --%>
   <!-- End page content -->
 </div>
 

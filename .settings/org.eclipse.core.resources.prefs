@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
+encoding//WebContent/admin/admin.jsp=UTF-8
 encoding//WebContent/index_1.jsp=UTF-8
-encoding//WebContent/view/admin.jsp=UTF-8
+encoding//WebContent/view/board/writeForm.jsp=UTF-8
+encoding//src/db/UserlistDBBean.java=UTF-8

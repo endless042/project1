@@ -47,8 +47,9 @@
     </p>
   </header><center><h2 class="w3-wide w3-center">글 내용 보기</h2>
 
-<div class="container w3-responsive">
-<table class="w3-table w3-bordered " style="width: 80%; ">
+<div class="container w3-responsive" >
+<div  style="padding-bottom: 64px;">
+<table class="w3-table w3-bordered " style="width: 80%; "  >
 
 <tr height="30" >
 <td width="125" align="center"><b>글번호</b></td>
@@ -83,11 +84,12 @@
 <input type="button" class="w3-button w3-hover-black" value="목록" onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">
 </td></tr></table>
 
-<% }catch(Exception e){} %>
-
 
 </div>
-</center>
+ </div>
 
+</center>
+</div>
 </body>
 </html>
+<% }catch(Exception e){} %>
