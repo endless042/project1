@@ -10,9 +10,9 @@
 <body>
 
 
- <div class="w3-light-grey w3-center w3-padding-24" style="margin-left:250px">Powered by <a href="/project/view/main.jsp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
+ <div class="w3-black w3-center w3-padding-24" style="margin-top:40px;">Powered by <a href="/project/view/main.jsp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
 
 
-
+</div>
 </body>
 </html>

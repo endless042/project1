@@ -1,29 +1,13 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>"%>
+    pageEncoding="UTF-8"%>
 <html>
 <title>Plant shop</title>
 <meta charset="UTF-8">
 
 
 
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">경매</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
+ 
 
 <!-- category -->
     <div class="w3-container">
@@ -38,63 +22,96 @@
     </div>
  
   <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <a href="aproductview.jsp"><img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%"></a>
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
+  <div class="w3-row-padding ">
+     
+      
+        <div class="w3-third w3-container w3-margin-bottom w3-padding">
+         <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-red">입찰하기</button>
           </div>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+               <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
       </div>
     </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-          <span class="w3-tag w3-display-topleft">마감임박</span>
+    
+ <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+      <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-red">입찰하기</button>
+          </div>
+        </div><div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+      </div>
+    </div>
+    
+   <div class="w3-third w3-container w3-margin-bottom w3-padding">
+       <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">입찰하기</button>
           </div>
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
-      </div>
-    </div>
+      <div class="w3-container w3-border ">
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+       <h6>코브라아비스 30cm 중품</h6> 
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right"><font color="red">0일 5시간 30초</font></td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
       </div>
     </div>
-  </div>
+     </div>
+
+  <!-- Product grid -->
+  <div class="w3-row-padding ">
+     
+      
+        <div class="w3-third w3-container w3-margin-bottom w3-padding">
+         <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">입찰하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+               <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+      </div>
+    </div>
+    
+ <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+      <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">입찰하기</button>
+          </div>
+        </div><div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+      </div>
+    </div>
+    
+   <div class="w3-third w3-container w3-margin-bottom w3-padding">
+       <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red" onclick="location.href='aproductview.jsp?select=auction';">입찰하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right"><font color="red">0일 5시간 30초</font></td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+      </div>
+    </div>
+     </div>
 
   
   
@@ -114,8 +131,4 @@
 
 
   <!-- End page content -->
-</div>
-
-
-</body>
-</html>
+ 

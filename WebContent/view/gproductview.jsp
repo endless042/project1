@@ -7,21 +7,7 @@
 
 
 
-
  
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main " style="margin-left:250px">
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
- <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">공동구매</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
  <!-- Section -->
   <div class="w3-container w3-content w3-padding" style="max-width:850px" id="contact">
 
@@ -126,10 +112,7 @@
 
  
   <!-- End page content -->
-</div>
-
-
-</body>
+ 
 
 <script>
 function myFunction() {
@@ -142,4 +125,4 @@ function myFunction() {
 }
 </script>
 
-</html>
+ 

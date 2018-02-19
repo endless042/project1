@@ -13,20 +13,7 @@
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">소식</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
+ 
 <p class="w3-left" style="padding-left:30px;"></p>
 
 <center>
@@ -40,8 +27,8 @@
 	<tr height="30"><td align="center"><b>비밀번호를 입력해주세요.</b></td></tr>
 	<tr height="30"></tr>
 	<tr height="30">	
-	<td align="center">비밀번호:
-	<input type="password" name="passwd" size="8" maxlength="12">
+	<td align="center" style="padding-bottom:50px; ">비밀번호:
+	<input type="password" class="w3-input w3-border" style="display: inline-block; width: 200px;" name="passwd" size="8" maxlength="12">
 	<input type="hidden" name="num" value="<%=num%>">	 
 	</td></tr><tr height="30">
 	<td align="center"><input type="submit" class="w3-button w3-hover-black" value="삭제">
@@ -56,8 +43,4 @@
 
 </center>
 
- 
-</div>
-
-</body>
-</html>
+  

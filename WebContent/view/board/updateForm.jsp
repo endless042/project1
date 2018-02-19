@@ -29,46 +29,26 @@
 </head>
 <body>
 
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">소식</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
+ 
 
 <p class="w3-left"  style="padding-left:30px;"></p>
 <div class="w3-container" style="padding-bottom: 64px;">
 
 <center><h2 class="w3-wide w3-center">글수정</h2>
 <br>
-<form method="post" name="writeform" action="<%=request.getContextPath() %>/view/updatePro.jsp" >
+<form method="post" name="writeform" action="<%=request.getContextPath() %>/view/board/updatePro.jsp" >
 <input type="hidden" name="boardid" value="<%=boardid%>">
 <input type="hidden" name="num" value="<%=num%>">
 <input type="hidden" name="pageNum" value="<%=pageNum%>">
 
 
 
-<table class="w3-table w3-bordered  w3-striped "  style="width:70%;" >
-   <tr>
-    <td align="right" colspan="2" >
-	    <a href="list.jsp"> 글목록</a> 
-   </td>
-   </tr>
+<table class="w3-table w3-bordered "  style="width:90%;" >
+   
    <tr>
     <td  width="70"   align="center">이 름</td>
     <td  width="330">
-       <input type="text" size="10" maxlength="10" name="writer" value="<%=article.getWriter()%>"></td>
+       <input type="text"  size="10" maxlength="10" name="writer" value="<%=article.getWriter()%>"></td>
   </tr>
   <tr>
     <td  width="70"   align="center" >제 목
@@ -109,6 +89,4 @@
 
  
   <!-- End page content -->
-</div>
-</body>
-</html>
+ 

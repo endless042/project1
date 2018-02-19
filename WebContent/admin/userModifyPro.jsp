@@ -27,6 +27,10 @@
 		int chk=userPro.updateUser(user);
 	String id=request.getParameter("id");
 	String pwd=request.getParameter("pwd");
+	String pageNum=request.getParameter("pageNum");
+	if(pageNum==null||pageNum.equals("")){
+		pageNum="1";
+	}
 
 %>
 
@@ -38,7 +42,7 @@
 	<script>
 		alert("정보 수정 완료");
 		</script>
-	<meta http-equiv="Refresh" content="0;url=admin_userModify.jsp?id=<%=id%>&pwd=<%=pwd%>">
+	<meta http-equiv="Refresh" content="0;url=admin_userModify.jsp?id=<%=id%>&pwd=<%=pwd%>&pageNum=<%=pageNum%>">
 	
 	<%}else{ %>
 		<script>

@@ -1,6 +1,7 @@
 <%@ page language="java"
     pageEncoding="utf-8"%>
-    <% request.setCharacterEncoding("utf-8"); %>
+    <% request.setCharacterEncoding("utf-8"); 
+   %>
      <%
      
      int num=0,ref=0,re_step=0, re_level=0;
@@ -27,23 +28,7 @@
 <body>
 
 
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">소식</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
+ 
 
 
 <center><div class="w3-container" style="padding-bottom: 64px;">
@@ -61,17 +46,16 @@
 
 
 
-<table class="w3-table w3-bordered  w3-striped"  style="width:70%;" >
-   <tr>
-    <td align="right" colspan="2" >
-	    <a href="list.jsp"> 글목록</a> 
-   </td>
-   </tr>
+<table class="w3-table w3-bordered  w3-bordered"  style="width:90%;" >
+   
    <tr>
     <td  width="70"   align="center">이 름</td>
     <td  width="330">
-       <%=loginId %>
-       <input type="hidden" name="writer" value="<%=loginId%>">
+       <% if(loginId==null){
+       %> <input type="text" size="10" maxlength="12" name="writer"><%}else{
+       
+       %><%=loginId %> <input type="hidden" name="writer" value="<%=loginId%>"><%} %>
+      
   </tr>
   <tr>
     <td  width="70"   align="center" >제 목
@@ -116,8 +100,4 @@
 
  
   <!-- End page content -->
-</div>
-
-
-</body>
-</html>      
+ 

@@ -48,9 +48,10 @@
  pageNum="1";}%>
    <div class="w3-row-padding">
   <div class="w3-bar">
-   <input class="w3-button w3-black w3-margin-right" type="button" onclick="window.location='admin.jsp?pageNum=<%=pageNum %>'" value="뒤로">
+   <input class="w3-button w3-black w3-margin-right" type="button" onclick="window.location='admin_userlist.jsp?pageNum=<%=pageNum %>'" value="뒤로">
 	<input type="hidden" name="id" value="<%=user.getId()%>">
 	<input type="hidden" name="pwd" value="<%=user.getPwd()%>">
+	<input type="hidden" name="pageNum" value="<%=pageNum %>">
    <input type="submit" class="w3-button w3-black w3-margin-right" value="확인"> <br><br></p>
   </div>
   </div>

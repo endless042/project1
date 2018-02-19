@@ -84,24 +84,24 @@
     		if(endPage>pageCount)endPage=pageCount;
     	
     		if(startPage>bottomLine){%>
-    		<a href="admin_userlist.jsp?pageNum=<%=startPage-bottomLine %>&select=auserlist" class="w3-bar-item w3-button w3-hover-black">«</a>
+    		<a href="admin_userlist.jsp?pageNum=<%=startPage-bottomLine %>" class="w3-bar-item w3-button w3-hover-black">«</a>
     		<%} %>
     	
     		<%
     		for(int i=startPage;i<=endPage;i++){
     		 
     		if(i!=currentPage) { %>
-    		<a href="admin_userlist.jsp?pageNum=<%=i %>&select=auserlist" class="w3-bar-item w3-button w3-hover-black"><%=i %></a>
+    		<a href="admin_userlist.jsp?pageNum=<%=i %>" class="w3-bar-item w3-button w3-hover-black"><%=i %></a>
     		<%}
     		else  {%>
-    		<a href="admin_userlist.jsp?pageNum=<%=i %>&select=auserlist" class="w3-bar-item w3-black w3-button"><%=i %></a>
+    		<a href="admin_userlist.jsp?pageNum=<%=i %>" class="w3-bar-item w3-black w3-button"><%=i %></a>
     		
     		
     		<%}
     	
     		if(endPage<pageCount){
     		%>
-    		<a href="admin_userlist.jsp?pageNum=<%=startPage+bottomLine %>&select=auserlist" class="w3-bar-item w3-button w3-hover-black">»</a>
+    		<a href="admin_userlist.jsp?pageNum=<%=startPage+bottomLine %>" class="w3-bar-item w3-button w3-hover-black">»</a>
     			<%} }	
     		} 
     		%>

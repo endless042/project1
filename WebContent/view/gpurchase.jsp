@@ -7,25 +7,8 @@
 
 
 
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">공동구매</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
-
  
+
 <!-- category -->
     <div class="w3-container">
     <div class="w3-section w3-bottombar w3-padding-16">
@@ -38,65 +21,120 @@
     </div>
     </div>
  
+  
   <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <a href="gproductview.jsp"><img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%"></a>
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
+  <div class="w3-row-padding ">
+    
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+      <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-red" onclick="location.href='gproductview.jsp';">참여하기</button>
           </div>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-red" style="height:3px;width:60%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">60%</td></tr>  </table></font><p><b>34,000원 </b></p>
       </div>
     </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-          <span class="w3-tag w3-display-topleft">마감임박</span>
+      
+        
+    
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+       <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-red">참여하기</button>
           </div>
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
-      </div>
-    </div>
+      <div class="w3-container w3-border ">
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-orange" style="height:3px;width:90%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">90%</td></tr>  </table></font><p><b>34,000원 </b></p>
       </div>
     </div>
+      
+       
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right  " style="width:100%;">
+      <span class="w3-tag w3-display-topleft">달성</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">참여하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-green" style="height:3px;width:100%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">130%</td></tr>  </table></font><p><b>34,000원 </b></p>
+      </div>
+    </div>
+    
+      
   </div>
+  
+  <!-- Product grid -->
+  <div class="w3-row-padding ">
+    
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+      <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">참여하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
 
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-red" style="height:3px;width:60%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">60%</td></tr>  </table></font><p><b>34,000원 </b></p>
+      </div>
+    </div>
+      
+        
+    
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+       <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">참여하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-orange" style="height:3px;width:90%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">90%</td></tr>  </table></font><p><b>34,000원 </b></p>
+      </div>
+    </div>
+      
+       
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right  " style="width:100%;">
+      <span class="w3-tag w3-display-topleft">달성</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">참여하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-green" style="height:3px;width:100%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">130%</td></tr>  </table></font><p><b>34,000원 </b></p>
+      </div>
+    </div>
+    
+      
+  </div>
   
     <!-- Pagination -->
   <div class="w3-center w3-padding-32">
@@ -114,8 +152,4 @@
 
 
   <!-- End page content -->
-</div>
-
-
-</body>
-</html>
+ 

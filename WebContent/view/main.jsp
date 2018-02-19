@@ -7,131 +7,143 @@
 <meta charset="UTF-8">
 
 
+
  
 
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">메인 화면</p>
-    <p class="w3-right"><%if(login){%><%=loginId %>님 환영합니다.&nbsp;&nbsp;<%} %>
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
-
   <!-- Image header -->
-  <div class="w3-display-container w3-container">
+  <div class="w3-display-container w3-container w3-margin-bottom">
     <img src="<%= request.getContextPath() %>/images/menusample.PNG" alt="menusample" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">새로운 식물 업데이트</h1>
+      <h1 class="w3-jumbo w3-hide-small">태국 알로카시아 시리즈</h1>
       <h1 class="w3-hide-large w3-hide-medium">새로운 식물<br> 업데이트</h1>
-      <h1 class="w3-hide-small">매주 금요일 저녁 6시</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">구경하기</a></p>
+      <h1 class="w3-hide-small">경매 진행 중</h1>
+      <p><a href="#gg" class="w3-button w3-black w3-padding-large w3-large">구경하기</a></p>
     </div>
-  </div>
+  </div> 
 
-  <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
-  </div>
+ 
 <!-- category -->
-    <div class="w3-container">
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>인기</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>진행 중</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>마감임박</button>
-       <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>완료</button>
+    <div class="w3-container" id="gg">
+    <div class=" w3-section w3-row-padding " style="padding-top: 6px; padding-bottom:6px;">
+      <span class="w3-margin-right"><b>진행 중 경매 ▶</b></span> 
+    
+    </div>
+    
+    </div>
+ 
+  <!-- Product grid -->
+  <div class="w3-row-padding ">
+     
+      
+        <div class="w3-third w3-container w3-margin-bottom w3-padding">
+         <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">입찰하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+               <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+      </div>
+    </div>
+    
+ <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+      <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">입찰하기</button>
+          </div>
+        </div><div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+      </div>
+    </div>
+    
+   <div class="w3-third w3-container w3-margin-bottom w3-padding">
+       <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">입찰하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right"><font color="red">0일 5시간 30초</font></td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+      </div>
+    </div>
+     </div>
+ 
+  <!-- category -->
+    <div class="w3-container" >
+   <div class=" w3-section w3-row-padding " style="padding-top: 6px; padding-bottom:6px;">
+      <span class="w3-margin-right"><b>진행 중 공동구매 ▶</b></span> 
+    
     </div>
     </div>
  
   <!-- Product grid -->
-  <div class="w3-row ">
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
+  <div class="w3-row-padding ">
+    
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+      <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-red">참여하기</button>
           </div>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-      <div class="w3-container w3-grayscale">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-red" style="height:3px;width:60%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">60%</td></tr>  </table></font><p><b>34,000원 </b></p>
       </div>
     </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container w3-grayscale">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
+      
         
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-          <span class="w3-tag w3-display-topleft">마감임박</span>
+    
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+       <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
+       
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-red">참여하기</button>
           </div>
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+      <div class="w3-container w3-border ">
+
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-orange" style="height:3px;width:90%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">90%</td></tr>  </table></font><p><b>34,000원 </b></p>
       </div>
     </div>
+      
+       
+       <div class="w3-third w3-container w3-margin-bottom w3-padding">
+        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right  " style="width:100%;">
+      <span class="w3-tag w3-display-topleft">달성</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-red">참여하기</button>
+          </div>
+        </div>
+      <div class="w3-container w3-border ">
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+       <h6>코브라아비스 30cm 중품</h6> 
+                <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
+  <div class="w3-green" style="height:3px;width:100%; "></div>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">130%</td></tr>  </table></font><p><b>34,000원 </b></p>
       </div>
-      <div class="w3-container">
-        <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-    </div>
-  </div>
-
-  
-    <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
   
   
 
 
-<%-- <jsp:include page="/footer.jsp"></jsp:include> --%>
+
   <!-- End page content -->
-</div>
 
-
-</body>
-</html>

@@ -33,45 +33,30 @@
 		%>
 	
 
-<body><!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">소식</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header><center><h2 class="w3-wide w3-center">글 내용 보기</h2>
+<body> <center>
 
-<div class="container w3-responsive" >
+<div class="container w3-responsive w3-padding-64 ">
 <div  style="padding-bottom: 64px;">
-<table class="w3-table w3-bordered " style="width: 80%; "  >
-
-<tr height="30" >
-<td width="125" align="center"><b>글번호</b></td>
-<td width="125" align="center"><%=article.getNum() %></td>
-<td width="125" align="center"><b>조회수</b></td>
-<td width="125" align="center"><%= article.getReadcount()%></td>
+ 
+<table class="w3-table w3-bordered " style="width: 90%; "  >
+<tr ><td colspan="4"><h5><b><%= article.getSubject()%></b></h5></td></tr>
+<tr height="30">
+<td width="25%" align="center"><b>글번호</b></td>
+<td width="25%" align="center"><%=article.getNum() %></td>
+<td width="25%" align="center"><b>조회수</b></td>
+<td width="25%" align="center"><%= article.getReadcount()%></td>
 </tr>
 
 <tr height="30">
-<td width="125" align="center"><b>작성자</b></td>
-<td width="125" align="center"><%=article.getWriter() %></td>
-<td width="125" align="center"><b>작성일</b></td>
-<td width="125" align="center"><%= sdf.format(article.getReg_date())%></td>
+<td width="25%" align="center"><b>작성자</b></td>
+<td width="25%" align="center"><%=article.getWriter() %></td>
+<td width="25%" align="center"><b>작성일</b></td>
+<td width="25%" align="center" ><%= sdf.format(article.getReg_date())%></td>
 </tr>
 
-<tr height="30">
-<td width="125" align="center"><b>글제목</b></td>
-<td width="375" align="center" colspan="3"><%= article.getSubject()%></td></tr>
 
 <tr height="30">
-<td width="125" align="center"><b>글내용</b></td>
-<td width="375" align="left" colspan="3"><pre><%= article.getContent() %></pre></td></tr>
+<td width="100%" align="left" colspan="4" style="padding: 50px;"><pre><%= article.getContent() %></pre></td></tr>
 
 <tr height="30">
 <td colspan="4" class="w3-center">

@@ -21,28 +21,14 @@ text-decoration: none;
 </style>
 </head>
 <body>
-
-<%-- <jsp:include page="../menu.jsp"/> --%>
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">소식</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
+ 
 
  
     <% String boardid=request.getParameter("boardid");
     if(boardid==null) boardid="1";
     
     %>
-    <% int pageSize=10;
+    <% int pageSize=8;
     SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
     String pageNum=request.getParameter("pageNum");
     if(pageNum==null||pageNum==""){
@@ -72,7 +58,7 @@ text-decoration: none;
     <div class="w3-container w3-padding-64">
  
     	<p class="w3-right w3-padding-right-large">
-    	<a href="writeForm.jsp">글쓰기</a>
+    	<a href="writeForm.jsp"><button class="w3-button w3-green">글쓰기</button></a>
     	</p>
     	<%
     	
@@ -88,15 +74,15 @@ text-decoration: none;
     	
     	<% }else{ %>
     	(전체글:<%=count %>)
-    	<table class="w3-table w3-bordered w3-hoverable" width="80%">
-    	<tr class="w3-light-grey">
+    	<table class="w3-table   w3-hoverable   w3-border-top w3-border-bottom" width="80%">
+    	<tr class="  w3-border-bottom">
     	<td class="w3-center" width="50"><b>번호</b></td>
     	<td class="w3-center" width="250"><b>제목</b></td>
     	<td class="w3-center" width="100"><b>작성자</b></td>
     	<td class="w3-center" width="150"><b>작성일</b></td>
     	<td class="w3-center" width="50"><b>조회</b></td>
     	
-    	
+    	  
     	<% for (int i=0;i<articleList.size();i++){
     			BoardDataBean article=(BoardDataBean)articleList.get(i);%>
     			<tr height="30">
@@ -128,9 +114,12 @@ text-decoration: none;
     	</table>
     	<%} %>
     	
+    	
+    	
     	<!-- 하단 페이징  -->
     	<div class="w3-center w3-section">
-    	<% int bottomLine=3;
+    	
+    	<% int bottomLine=5;
     	
     	if(count>0){
     		int pageCount=count/pageSize+(count%pageSize==0?0:1);
@@ -140,21 +129,23 @@ text-decoration: none;
     		if(endPage>pageCount)endPage=pageCount;
     	
     		if(startPage>bottomLine){%>
-    		<a href="list.jsp?pageNum=<%=startPage-bottomLine %>">[이전]</a>
+    		 <a href="list.jsp?pageNum=<%=startPage-bottomLine %>" class="w3-bar-item w3-button w3-hover-black">«</a>
+    	
     		<%} %>
     	
     		<%
     		for(int i=startPage;i<=endPage;i++){%>
-    		<a href="list.jsp?pageNum=<%=i %>">
+    	
     		<% 
-    		if(i!=currentPage) out.print("["+i+"]");
-    		else out.print("<font color='red'>["+i+"]</font>");%></a>
+    		if(i!=currentPage) {%>  <a href="list.jsp?pageNum=<%=i %>" class="w3-bar-item w3-button w3-hover-black"><%=i %></a> <%}
+    		else {%>  <a href="list.jsp?pageNum=<%=i %>" class="w3-bar-item w3-black w3-button"><%=i %></a> <%}%>
     		<%}
     	
     	
     		if(endPage<pageCount){
     		%>
-    		<a href="list.jsp?pageNum=<%=startPage+bottomLine %>">[다음]</a>
+    		
+    		 <a href="list.jsp?pageNum=<%=startPage+bottomLine %>" class="w3-bar-item w3-button w3-hover-black">»</a>
     			<% }	
     	
     	} %>
@@ -163,7 +154,4 @@ text-decoration: none;
     	</div>
     	 
   <!-- End page content -->
-</div>
-    	
-</body>
-</html>
+ 

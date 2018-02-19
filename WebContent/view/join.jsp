@@ -11,18 +11,7 @@
 } 
 </style>
 
-
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  <!--  -->
-   <header class="w3-container w3-xlarge">
-    <p class="w3-left">회원가입</p>
-  </header>
+ 
   
 <div class="w3-container" >
   <form class="w3-container"  action="joinPro.jsp">
@@ -94,7 +83,7 @@
  
   
    <p> <label ><b>ADDRESS</b></label><br>
-  <input class="w3-input w3-border" name="addr" type="text" placeholder="주소" ></p>
+  <input class="w3-input w3-border" name="addr" type="text" placeholder="주소" style="width:400px;"></p>
 
 
   
@@ -120,10 +109,9 @@
 
 
 
- <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
-
+ 
   <!-- End page content -->
-</div>
+ 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
  $(function(){
@@ -143,9 +131,7 @@
  
 
 </script>
-
-</body>
-</html>
+ 
 
 
 

@@ -18,7 +18,7 @@ alert("성공적으로 탈퇴되었습니다.");
 
 
 </script>
-<meta http-equiv="Refresh" content="0;url=index.jsp?select=admin">
+<meta http-equiv="Refresh" content="0;url=main.jsp">
 
 
 		<% }else{ %>
