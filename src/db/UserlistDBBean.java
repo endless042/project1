@@ -133,6 +133,7 @@ public class UserlistDBBean {
 					user.setTel(rs.getString("tel"));
 					user.setEmail(rs.getString("email"));
 					user.setCdate(rs.getDate("cdate"));
+					user.setPoint(rs.getString("point"));
 
 					
 			
@@ -229,6 +230,7 @@ public List getUsers(int startRow, int endRow) {
 						user.setName(rs.getString("name"));
 						user.setPwd(rs.getString("pwd"));
 						user.setTel(rs.getString("tel"));
+						user.setPoint(rs.getString("point"));
 						user.setUlevel(rs.getString("ulevel"));
 						
 						
@@ -310,7 +312,7 @@ public int updateUser(UserlistDataBean user) {
 	int chk=0;
 	try {
 
-		sql="update userlist set name=?, bdate=?, addr=?, tel=?, email=?, ulevel=? where id=? and pwd=?";
+		sql="update userlist set name=?, bdate=?, addr=?, tel=?, email=?, point=?, ulevel=? where id=? and pwd=?";
 		
 		pstmt=con.prepareStatement(sql);
 		pstmt.setString(1, user.getName());
@@ -318,11 +320,12 @@ public int updateUser(UserlistDataBean user) {
 		pstmt.setString(3, user.getAddr());
 		pstmt.setString(4, user.getTel());
 		pstmt.setString(5, user.getEmail());
-		pstmt.setString(6,user.getUlevel());
-		pstmt.setString(7, user.getId());
-		pstmt.setString(8, user.getPwd());
+		pstmt.setString(6, user.getPoint());
+		pstmt.setString(7,user.getUlevel());
+		pstmt.setString(8, user.getId());
+		pstmt.setString(9, user.getPwd());
 		
-		System.out.println(user.getName()+user.getBdate()+user.getAddr()+user.getTel()+user.getEmail()+user.getUlevel()+user.getId()+user.getPwd());
+		System.out.println(user.getName()+user.getBdate()+user.getAddr()+user.getTel()+user.getEmail()+user.getPoint()+user.getUlevel()+user.getId()+user.getPwd());
 		
 		chk=pstmt.executeUpdate(); 	//紐� 媛쒖쓽 �뻾�씠 �뾽�뜲�씠�듃�릺�뿀�뒗吏� int濡� 諛섑솚 (1�씠硫� �꽦怨�,0�씠硫� �떎�뙣)
 		

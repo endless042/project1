@@ -6,16 +6,10 @@
 <meta charset="UTF-8">
 
 
-
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+ 
 
  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div class="w3-container w3-content w3-padding-64"  id="contact">
   <h2 class="w3-wide w3-center">ABOUT US</h2>
   <div class="w3-row w3-padding-16">sdgsdgsdgsd</div>
   

@@ -1,7 +1,7 @@
 <%@page import="db.BoardDBBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <% request.setCharacterEncoding("utf-8"); %>
+    <% request.setCharacterEncoding("UTF-8"); %>
    
       <%
      String boardid=request.getParameter("boardid");
@@ -9,16 +9,13 @@
      String pageNum=request.getParameter("pageNum");
      if(pageNum==null||pageNum==""){pageNum="1";}
      %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+
+
 <jsp:useBean id="article" class="db.BoardDataBean">
 <jsp:setProperty name="article" property="*"/>
 </jsp:useBean>
+
+<%System.out.println(request.getParameter("subject")); %>
 
 <% System.out.println(article); %>
 
@@ -38,7 +35,3 @@ BoardDBBean dbPro = BoardDBBean.getInstance();
 
 %>
 
-
-
-</body>
-</html>

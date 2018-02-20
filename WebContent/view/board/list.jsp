@@ -74,7 +74,7 @@ text-decoration: none;
     	
     	<% }else{ %>
     	(전체글:<%=count %>)
-    	<table class="w3-table   w3-hoverable   w3-border-top w3-border-bottom" width="80%">
+    	<table class="w3-table  w3-border-top w3-border-bottom" width="80%">
     	<tr class="  w3-border-bottom">
     	<td class="w3-center" width="50"><b>번호</b></td>
     	<td class="w3-center" width="250"><b>제목</b></td>
@@ -85,7 +85,7 @@ text-decoration: none;
     	  
     	<% for (int i=0;i<articleList.size();i++){
     			BoardDataBean article=(BoardDataBean)articleList.get(i);%>
-    			<tr height="30">
+    			<tr height="30" >
     			<td class="w3-center" width="50"><%=number-- %></td>
     			<td width="250"><% int wid=0;
     			if(article.getRe_level() >0 ){

@@ -8,7 +8,9 @@
     String id=request.getParameter("id");
     String pwd=request.getParameter("pwd");
 	
-  
+    String pageNum=request.getParameter("pageNum");
+    if(pageNum==null||pageNum==""){
+    	pageNum="1";}
 	UserlistDBBean userPro=UserlistDBBean.getInstance();
 	int check=userPro.deleteUser(id,pwd);
 	if(check==1){
@@ -18,7 +20,7 @@ alert("성공적으로 탈퇴되었습니다.");
 
 
 </script>
-<meta http-equiv="Refresh" content="0;url=main.jsp">
+<meta http-equiv="Refresh" content="0;url=admin_userlist.jsp?pageNum=<%=pageNum%>&select=auserlist">
 
 
 		<% }else{ %>

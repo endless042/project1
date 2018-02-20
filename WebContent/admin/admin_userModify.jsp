@@ -33,6 +33,7 @@
 <tr ><td>  <label><b>이메일</b></label></td><td><input type="text"  class="w3-input" name="email" value="<%=user.getEmail() %>"><p/></td></tr>
 <tr  height="50px"><td><label><b>가입일</b></label>
 </td><td align="left">&nbsp;&nbsp;&nbsp;<%=user.getCdate() %></td></tr>
+<tr><td><label><b>적립금</b></label></td><td><input type="text"  class="w3-input" name="point" value="<%=user.getPoint() %>"><p/></td></tr>
 <tr height="50px"><td><label><b>회원레벨</b></label>
 </td><td align="left">&nbsp;&nbsp;&nbsp;<select style="max-width: 100px;" class="w3-select w3-border" name="ulevel">
     <option value="<%=user.getUlevel() %>" selected>선택</option>
@@ -48,7 +49,7 @@
  pageNum="1";}%>
    <div class="w3-row-padding">
   <div class="w3-bar">
-   <input class="w3-button w3-black w3-margin-right" type="button" onclick="window.location='admin_userlist.jsp?pageNum=<%=pageNum %>'" value="뒤로">
+   <input class="w3-button w3-black w3-margin-right" type="button" onclick="window.location='admin_userlist.jsp?pageNum=<%=pageNum %>&select=auserlist'" value="뒤로">
 	<input type="hidden" name="id" value="<%=user.getId()%>">
 	<input type="hidden" name="pwd" value="<%=user.getPwd()%>">
 	<input type="hidden" name="pageNum" value="<%=pageNum %>">

@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- 
+ <!DOCTYPE html>
 <html>
 <title>Plant shop</title>
 <meta charset="UTF-8">
@@ -46,7 +46,8 @@
       <div class="w3-container w3-border ">
 
        <h6>코브라아비스 30cm 중품</h6> 
-               <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+               <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p>
+               <table width="100%"><tr><td><b>현재가</b> </td><td class="w3-right"><b>34,000원</b></td></tr>  </table>  <p/>
       </div>
     </div>
     
@@ -59,7 +60,9 @@
         </div><div class="w3-container w3-border ">
 
        <h6>코브라아비스 30cm 중품</h6> 
-                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right">3일 15시간 30초</td></tr>  </table></font><p>
+                
+                <table width="100%"><tr><td><b>현재가</b> </td><td class="w3-right"><b>34,000원</b></td></tr>  </table>  <p/>
       </div>
     </div>
     
@@ -73,7 +76,8 @@
       <div class="w3-container w3-border ">
 
        <h6>코브라아비스 30cm 중품</h6> 
-                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right"><font color="red">0일 5시간 30초</font></td></tr>  </table></font><p><b>현재가 34,000원 </b></p>
+                <font class="w3-small"><table width="100%" class="w3-light-grey"><tr><td>남은시간  </td><td class="w3-right"><font color="red">0일 5시간 30초</font></td></tr>  </table></font><p>
+      <table width="100%"><tr><td><b>현재가</b> </td><td class="w3-right"><b>34,000원</b></td></tr>  </table>  <p/>
       </div>
     </div>
      </div>
@@ -101,7 +105,8 @@
        <h6>코브라아비스 30cm 중품</h6> 
                 <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
   <div class="w3-red" style="height:3px;width:60%; "></div>
-</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">60%</td></tr>  </table></font><p><b>34,000원 </b></p>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">60%</td></tr>  </table></font><p>
+<table width="100%"><tr><td><b>공동구매가</b> </td><td class="w3-right"><b>34,000원</b></td></tr>  </table>  <p/>
       </div>
     </div>
       
@@ -119,7 +124,8 @@
        <h6>코브라아비스 30cm 중품</h6> 
                 <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
   <div class="w3-orange" style="height:3px;width:90%; "></div>
-</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">90%</td></tr>  </table></font><p><b>34,000원 </b></p>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">90%</td></tr>  </table></font><p>
+<table width="100%"><tr><td><b>공동구매가</b> </td><td class="w3-right"><b>34,000원</b></td></tr>  </table>  <p/>
       </div>
     </div>
       
@@ -136,7 +142,8 @@
        <h6>코브라아비스 30cm 중품</h6> 
                 <div class="w3-light-grey" style="margin-bottom:5px; margin-top:10px;">
   <div class="w3-green" style="height:3px;width:100%; "></div>
-</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">130%</td></tr>  </table></font><p><b>34,000원 </b></p>
+</div><font class="w3-small"><table width="100%"><tr><td>13일 남음  </td><td class="w3-right">130%</td></tr>  </table></font><p>
+<table width="100%"><tr><td><b>공동구매가</b> </td><td class="w3-right"><b>34,000원</b></td></tr>  </table>  <p/>
       </div>
     </div>
   </div>

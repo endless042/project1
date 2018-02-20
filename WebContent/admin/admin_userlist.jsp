@@ -40,10 +40,11 @@
     	<tr class="w3-light-grey">
     	<td class="w3-center" width="10%"><b>회원번호</b></td>
     	<td class="w3-center" width="10%"><b>레벨</b></td>
-    	<td class="w3-center" width="20%"><b>아이디</b></td>
+    	<td class="w3-center" width="15%"><b>아이디</b></td>
     	<td class="w3-center" width="15%"><b>이름</b></td>
     	<td class="w3-center" width="20%"><b>가입일</b></td>
-    	<td class="w3-center" width="25%"><b>관리</b></td>
+    	<td class="w3-center" width="10%"><b>적립금</b></td>
+    	<td class="w3-center" width="20%"><b>관리</b></td>
     
     
     <% for (int i=0;i<userList.size();i++){
@@ -54,17 +55,20 @@
     			<td class="w3-center" ><%=user.getId()%></td>
     			<td class="w3-center" ><%=user.getName()%></td>
     			<td class="w3-center" ><%=user.getCdate()%></td>
+    			<td class="w3-center"><%=user.getPoint() %></td>
     			<td class="w3-center" >
     			
     			
-    			<form method="post" action="admin_userModify.jsp">
+    			<form method="post" action="admin_userModify.jsp" style="display: inline-block;">
     			<input type="hidden" name="pageNum" value="<%= pageNum%>">
+    			<input type="hidden" name="select" value="auserlist">
     			<button class="w3-button w3-padding-small w3-black tablink w3-hover-green w3-small" 
-    			type="submit" onclick="openAdminPage(event,'userModify')">수정</button>
+    			type="submit" onclick="openAdminPage(event,'userModify')">수정</button></form>
     			
     			
-    			<form method="post" action="deleteUserPro.jsp"><button class="w3-padding-small w3-hover-red
+    			<form method="post" action="deleteUserPro.jsp" style="display: inline-block;"><button class="w3-padding-small w3-hover-red
     			 w3-button w3-small w3-black" type="submit" >탈퇴</button>
+    			 <input type="hidden" name="pageNum" value="<%= pageNum%>">
     			<input type="hidden" name="id" value="<%= user.getId()%>">
     			<input type="hidden" name="pwd" value="<%=user.getPwd() %>"></form></td>
 

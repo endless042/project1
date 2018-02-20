@@ -15,8 +15,15 @@ public class UserlistDataBean {
 	private String tel;
 	private String email;
 	private Date cdate; 
+	private String point; 
 	
 	
+	public String getPoint() {
+		return point;
+	}
+	public void setPoint(String point) {
+		this.point = point;
+	}
 	public Date getCdate() {
 		return cdate;
 	}
@@ -80,8 +87,10 @@ public class UserlistDataBean {
 	@Override
 	public String toString() {
 		return "UserlistDataBean [num=" + num + ", ulevel=" + ulevel + ", name=" + name + ", id=" + id + ", pwd=" + pwd
-				+ ", bdate=" + bdate + ", addr=" + addr + ", tel=" + tel + ", email=" + email + "]";
+				+ ", point=" + point + ", bdate=" + bdate + ", addr=" + addr + ", tel=" + tel + ", email=" + email
+				+ ", cdate=" + cdate + "]";
 	}
+	
 	
 	
 	

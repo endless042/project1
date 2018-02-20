@@ -1,7 +1,7 @@
-<%@ page language="java"
-    pageEncoding="utf-8"%>
-    <% request.setCharacterEncoding("utf-8"); 
-   %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%   request.setCharacterEncoding("UTF-8"); %>
+   
      <%
      
      int num=0,ref=0,re_step=0, re_level=0;
@@ -20,13 +20,6 @@
     
     
     %>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></head>
-<html>
-<head>
-<title>게시판</title>
-</head>
-<body>
-
 
  
 
