@@ -21,7 +21,12 @@
     
     %>
 
- 
+  <style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+
+</style>
 
 
 <center><div class="w3-container" style="padding-bottom: 64px;">
@@ -42,43 +47,43 @@
 <table class="w3-table w3-bordered  w3-bordered"  style="width:90%;" >
    
    <tr>
-    <td  width="70"   align="center">이 름</td>
+    <td  width="70" class=" w3-center "  ><label><b>이 름</b></label></td>
     <td  width="330">
        <% if(loginId==null){
-       %> <input type="text" size="10" maxlength="12" name="writer"><%}else{
+       %> <input type="text" class="w3-input w3-border-0 w3-hover-light-grey" style="width:300px;" size="10" maxlength="12" name="writer"><%}else{
        
        %><%=loginId %> <input type="hidden" name="writer" value="<%=loginId%>"><%} %>
       
   </tr>
   <tr>
-    <td  width="70"   align="center" >제 목
+    <td  width="70" class=" w3-center "    ><label><b>제 목</b></label>
     </td>
     <td width="330">
  
  	<%if(request.getParameter("num")==null){%>
  	
-       <input type="text" size="40" maxlength="50" name="subject">
+       <input type="text" size="40" maxlength="50" name="subject" class="w3-input w3-border-0 w3-hover-light-grey">
        <%}else{ %>
-       <input type="text" size="40" maxlength="50" name="subject" value="[답글]">
+       <input type="text" size="40" maxlength="50" name="subject" value="[답글]" class="w3-input w3-border-0 w3-hover-light-grey">
        <%} %>
 	
    
    </td>
   </tr>
   <tr>
-    <td  width="70"   align="center">Email</td>
+    <td  width="70" class=" w3-center " ><label><b>Email</b></label></td>
     <td  width="330">
-       <input type="text" size="40" maxlength="30" name="email" ></td>
+       <input type="text" size="40" maxlength="30" name="email" class="w3-input w3-border-0 w3-hover-light-grey" ></td>
   </tr>
   <tr>
-    <td  width="70"   align="center" >내 용</td>
+    <td  width="70" class=" w3-center " ><label><b>내 용</b></label></td>
     <td  width="330" >
-     <textarea name="content" rows="13" cols="40"></textarea> </td>
+     <textarea name="content" rows="13" cols="40" class="w3-input w3-border-0 w3-hover-light-grey"></textarea> </td>
   </tr>
   <tr>
-    <td  width="70"   align="center" >비밀번호</td>
+    <td  width="70" class=" w3-center " ><label><b>비밀번호</b></label></td>
     <td  width="330" >
-     <input type="password" size="8" maxlength="12" name="passwd"> 
+     <input type="password" size="8" maxlength="12" name="passwd"  style="width:300px;"  class="w3-input w3-border-0 w3-hover-light-grey"> 
 	 </td>
   </tr>
 <tr>      

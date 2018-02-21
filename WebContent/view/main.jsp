@@ -15,9 +15,9 @@
   <div class="w3-display-container w3-container w3-margin-bottom">
     <img src="<%= request.getContextPath() %>/images/menusample.PNG" alt="menusample" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">태국 알로카시아 시리즈</h1>
-      <h1 class="w3-hide-large w3-hide-medium">새로운 식물<br> 업데이트</h1>
-      <h1 class="w3-hide-small">경매 진행 중</h1>
+      <h1 class="w3-jumbo w3-hide-small " style="text-shadow:1px 1px 0 #444">태국 알로카시아 시리즈</h1>
+      <h1 class="w3-hide-large w3-hide-medium" style="text-shadow:1px 1px 0 #444">경매 진행 중</h1>
+      <h1 class="w3-hide-small " style="text-shadow:1px 1px 0 #444">경매 진행 중</h1>
       <p><a href="#gg" class="w3-button w3-black w3-padding-large w3-large">구경하기</a></p>
     </div>
   </div> 

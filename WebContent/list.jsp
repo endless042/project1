@@ -22,6 +22,7 @@ text-decoration: none;
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
+
 </style>
 </head>
 <body>
@@ -32,7 +33,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     if(boardid==null) boardid="1";
     
     %>
-    <% int pageSize=10;
+    <% int pageSize=5;
     SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
     String pageNum=request.getParameter("pageNum");
     if(pageNum==null||pageNum==""){
@@ -59,7 +60,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <p class="w3-left" style="padding-left:30px;">
     </p>
     
-    <div class="w3-container w3-padding-64">
+    <div class="w3-container ">
  
     	<p class="w3-right w3-padding-right-large">
     	<a href="writeForm.jsp"><button class="w3-button w3-green">글쓰기</button></a>
@@ -78,13 +79,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     	
     	<% }else{ %>
     	(전체글:<%=count %>)
-    	<table class="w3-table  w3-border-top w3-border-bottom" width="80%">
+    	<table class="w3-table  w3-border-top w3-border-bottom" width="90%">
     	<tr class="  w3-border-bottom">
-    	<td class="w3-center" width="50"><b>번호</b></td>
+    	<td class="w3-center " width="50"><b>번호</b></td>
     	<td class="w3-center" width="250"><b>제목</b></td>
-    	<td class="w3-center" width="100"><b>작성자</b></td>
-    	<td class="w3-center" width="150"><b>작성일</b></td>
-    	<td class="w3-center" width="50"><b>조회</b></td>
+    	<td class="w3-center " width="100"><b>작성자</b></td>
+    	<td class="w3-center " width="150"><b>작성일</b></td>
+    	<td class="w3-center " width="50"><b>조회</b></td>
     	
     	  
     	<% for (int i=0;i<articleList.size();i++){
@@ -96,7 +97,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     			wid=15*(article.getRe_level());
     			
     			%><img src="../../images/level.gif" width="<%=wid %>" height="16">
-    			&#8600;
+    			└
     			<% }else{
     				
     				%> <img src="../../images/level.gif" width="<%=wid %>" height="16">

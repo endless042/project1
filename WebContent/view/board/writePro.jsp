@@ -8,6 +8,9 @@
      if(boardid==null) boardid="1";
      String pageNum=request.getParameter("pageNum");
      if(pageNum==null||pageNum==""){pageNum="1";}
+
+     String test=request.getParameter("test");
+     System.out.println(test);
      %>
 
 

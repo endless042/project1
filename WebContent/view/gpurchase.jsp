@@ -22,7 +22,7 @@
     </div>
     </div>
  
-  
+  <div>
   <!-- Product grid -->
   <div class="w3-row-padding ">
     
@@ -30,7 +30,7 @@
         <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
       <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-red">참여하기</button>
+            <button class="w3-button w3-red"  onclick="location.href='gproductview.jsp';">참여하기</button>
           </div>
         </div>
       <div class="w3-container w3-border ">
@@ -49,7 +49,7 @@
        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
        
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-red">참여하기</button>
+            <button class="w3-button w3-red"  onclick="location.href='gproductview.jsp';">참여하기</button>
           </div>
         </div>
       <div class="w3-container w3-border ">
@@ -67,7 +67,7 @@
         <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right  " style="width:100%;">
       <span class="w3-tag w3-display-topleft">달성</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-red">참여하기</button>
+            <button class="w3-button w3-red"  onclick="location.href='gproductview.jsp';">참여하기</button>
           </div>
         </div>
       <div class="w3-container w3-border ">
@@ -89,7 +89,7 @@
         <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
       <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-red">참여하기</button>
+            <button class="w3-button w3-red"  onclick="location.href='gproductview.jsp';"  onclick="location.href='aproductview.jsp';">참여하기</button>
           </div>
         </div>
       <div class="w3-container w3-border ">
@@ -108,7 +108,7 @@
        <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
        
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-red">참여하기</button>
+            <button class="w3-button w3-red"  onclick="location.href='gproductview.jsp';">참여하기</button>
           </div>
         </div>
       <div class="w3-container w3-border ">
@@ -126,7 +126,7 @@
         <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right  " style="width:100%;">
       <span class="w3-tag w3-display-topleft">달성</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-red">참여하기</button>
+            <button class="w3-button w3-red"  onclick="location.href='gproductview.jsp';">참여하기</button>
           </div>
         </div>
       <div class="w3-container w3-border ">
@@ -138,9 +138,11 @@
 <table width="100%"><tr><td><b>공동구매가</b> </td><td class="w3-right"><b>34,000원</b></td></tr>  </table>  <p/>
       </div>
     </div>
+    
+    
   </div>
   
-  
+  </div>
     <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">

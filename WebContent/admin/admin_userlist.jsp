@@ -61,6 +61,8 @@
     			
     			<form method="post" action="admin_userModify.jsp" style="display: inline-block;">
     			<input type="hidden" name="pageNum" value="<%= pageNum%>">
+    			<input type="hidden" name="id" value="<%= user.getId()%>">
+    			<input type="hidden" name="pwd" value="<%=user.getPwd() %>">
     			<input type="hidden" name="select" value="auserlist">
     			<button class="w3-button w3-padding-small w3-black tablink w3-hover-green w3-small" 
     			type="submit" onclick="openAdminPage(event,'userModify')">수정</button></form>

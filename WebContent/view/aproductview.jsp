@@ -25,38 +25,36 @@
   
 <!-- 상세정보쪽 div-->
   <div class="w3-container w3-half w3-cell w3-cell-bottom" >
-    <table><tr><td>
+    <table  ><tr><td class="w3-border-bottom">
     
-    <p><b>품명 : </b>Alocasia lauterbachiana</p>
+    <p><b>품명 : </b>Alocasia lauterbachiana<br>
     
-    	<p><b>원산지 : </b>태국</p>
-    	<p><b>분류 : </b>관엽류</p>
-    <hr>
+    	<b>원산지 : </b>태국<br>
+    	<b>분류 : </b>관엽류<br>
+    	<b>크기 : </b>약 50cm<br>
+   </td></tr><tr><td class="w3-border-bottom">
     <p><b>배송방법 : </b>픽업만 가능</p>
-    <hr>
     
-    <p><b>공동구매가 : </b>35,000원</p>
-    <p><b>진행기간 : </b>2018-02-09 ~ 2018-02-18</p>
-   <hr>
-    <p><b>진행상황</b> </p>
+   </td><tr>
+   <tr><td class="w3-border-bottom"> 
+   
+      <p><b>진행기간 : </b>2018-02-09 ~ 2018-02-18</p>
+ </td><tr><tr><td class="w3-border-bottom">
+    <p><label><b>남은시간</b> </label><br>
     
-    <div class="w3-light-grey">
-  <div class="w3-container w3-red w3-center w3-cell-bottom" style="width:50%">50%</div>
-</div><p>목표 수량 50개 중 현재  25개 달성 </p>
-</td></tr><tr><td>
-<div class="w3-bar w3-white">
-	
-  <select class="w3-select  w3-margin-right" style="width: 100px;" name="quantity">
-	<option  selected="selected" >수량 선택</option>
-	<option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-    </select><span class="w3-tag w3-large w3-white w3-margin-top w3-margin-right">총 가격 : 70,000 원</span>
- 
-  </div>
-
+    
+       <span class="w3-tag w3-padding w3-round-large w3-sand w3-center w3-border"><span class="w3-large">0</span></span>
+        <span class="w3-tag w3-padding w3-round-large w3-sand w3-center w3-border"><span class="w3-large">3</span></span>
+         <span class="w3-large"><b>:</b></span>
+         <span class="w3-tag w3-padding w3-round-large w3-sand w3-center w3-border"><span class="w3-large">1</span></span>
+          <span class="w3-tag w3-padding w3-round-large w3-sand w3-center w3-border"><span class="w3-large">4</span></span> 
+            <span class="w3-large"><b>:</b></span> 
+           <span class="w3-tag w3-padding w3-round-large w3-sand w3-center w3-border"><span class="w3-large">5</span></span>
+            <span class="w3-tag w3-padding w3-round-large w3-sand w3-center w3-border"><span class="w3-large">8</span></span> 
+  <p>
+</td></tr><tr><td class="w3-border-bottom">
+<p>
+<span class="w3-tag w3-large  w3-white   ">현재가 : 70,000 원</span><span class="w3-tag w3-medium w3-white">&#8725;&nbsp;&nbsp;시작가 : 5,000 원</span></p>
 
 
 
@@ -64,10 +62,10 @@
 </tr>
 <tr><td>
 
-<div class="w3-bar w3-white">
-<input type="button" class="w3-button  w3-black  w3-right w3-margin-right" value="신청하기">
-<input type="button" class="w3-button  w3-green w3-right w3-margin-right"  value="찜하기">
-<input type="button" class="w3-button w3-green w3-right w3-margin-right"  value="공유">
+<div class="w3-bar w3-white w3-section  ">
+<input type="button" style="width: 33%;" class="w3-button  w3-green  w3-right  w3-border-top w3-border-left w3-border-bottom" value="입찰하기">
+<input type="button" style="width: 33%;" class="w3-button   w3-white   w3-right w3-border-top w3-border-left w3-border-bottom "  value="찜하기">
+<input type="button" style="width: 33%;"  class="w3-button w3-white   w3-border-top w3-border-left w3-border-bottom w3-right "  value="공유">
 
  
    
@@ -82,32 +80,83 @@
   
   </div>
 
-
-<div class="w3-bar w3-border">
-  <a href="#" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
-  <a href="#" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
-  <a href="#" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
-  <a href="#" style="width:25%" class="w3-bar-item w3-button w3-hide-small">댓글</a>
+<div class="w3-bar w3-border" >
+  <a href="#content" style="width:25%" class="w3-bar-item w3-button w3-green w3-border-right">정보</a>
+  <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
+  <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
+  <a href="#reply" style="width:25%" class="w3-bar-item w3-button w3-hide-small">댓글</a>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div>
 
 <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-  <a href="#" class="w3-bar-item w3-button">문의</a>
-  <a href="#" class="w3-bar-item w3-button">후기</a>
-  <a href="#" class="w3-bar-item w3-button">댓글</a>
+  <a href="#qna" class="w3-bar-item w3-button">문의</a>
+  <a href="#review" class="w3-bar-item w3-button">후기</a>
+  <a href="#reply" class="w3-bar-item w3-button">댓글</a>
 </div>
 
-<div class="w3-container">
+
+  <div class="w3-container w3-section" id="content">
+  
   <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  <p>example page</p>
+  </div>
+  
+ 
+  <div class="w3-bar w3-border " >
+  <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
+  <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-green w3-border-right">문의</a>
+  <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
+  <a href="#reply" style="width:25%" class="w3-bar-item w3-button w3-hide-small">댓글</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div>
 
+
+  <div class="w3-container w3-section" id="qna">
+  <jsp:include page="/list.jsp"></jsp:include>
+  </div>
+  
+  <div class="w3-bar w3-border" >
+  <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
+  <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
+  <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-green w3-border-right">후기</a>
+  <a href="#reply" style="width:25%" class="w3-bar-item w3-button w3-hide-small">댓글</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+  
+   <div class="w3-container w3-section" id="review">
+  <jsp:include page="/list.jsp"></jsp:include>
+  </div>
+  
+  <div class="w3-bar w3-border" >
+  <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
+  <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
+  <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
+  <a href="#reply" style="width:25%" class="w3-bar-item w3-button w3-green w3-hide-small">댓글</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+  
+   <div class="w3-container w3-section" id="reply">
+  <jsp:include page="/list.jsp"></jsp:include>
+  </div>
+  
 
   
 
 </div>
 
 
-<hr>
+ 
 
 
  

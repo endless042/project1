@@ -7,7 +7,7 @@
 
 
 
- 
+ <div>
 
 <!-- category -->
     <div class="w3-container">
@@ -22,6 +22,7 @@
     </div>
     </div>
  
+ <div>
   <!-- Product grid -->
   <div class="w3-row-padding ">
      
@@ -124,7 +125,7 @@
      </div>
  
   
-  
+  </div>
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -137,7 +138,7 @@
     </div>
   </div>
   
-
+</div>
 
 
   <!-- End page content -->
