@@ -79,7 +79,7 @@
 
   
   </div>
-
+<hr>
 <div class="w3-bar w3-border" >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button w3-green w3-border-right">정보</a>
   <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>

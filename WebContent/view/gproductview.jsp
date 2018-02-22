@@ -11,7 +11,7 @@
  <!-- Section -->
   <div class="w3-container w3-content w3-padding" style="max-width:850px" id="contact">
 
-<div class="w3-cell-row w3-margin-bottom " >
+<div class="w3-cell-row w3-margin-bottom" >
 
 <div class="w3-bar w3-white "><span class="w3-tag w3-xlarge w3-black w3-margin-top w3-margin-right">1차</span>
 <span class="w3-tag w3-xxlarge w3-white w3-margin-top w3-margin-right">태국 은빛 알로카시아</span><hr></div>
@@ -79,7 +79,7 @@
 
   
   </div>
-
+<hr>
 
 <div class="w3-bar w3-border" >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button w3-green w3-border-right">정보</a>

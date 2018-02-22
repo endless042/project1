@@ -6,64 +6,56 @@
 <meta charset="UTF-8">
 
 
+ <div class="w3-container w3-padding-32">
  
-
- <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64"  id="contact">
-  <h2 class="w3-wide w3-center">ABOUT US</h2>
-  <div class="w3-row w3-padding-16">sdgsdgsdgsd</div>
-  
-    <h2 class="w3-wide w3-center">LOCATION</h2>
-  <!-- Add Google Maps -->
- <center> <div class="w3-container w3-content">
-<table cellpadding="0" cellspacing="0" width="462"> <tr> <td style="border:1px solid #cecece;">
-<a href="https://map.naver.com/index.nhn?searchCoord=232c32cf1f846a336b96c00355ccb2e37c69bb19dc8b502844b52d6fe0b77d49&query=7ZKN7ISx67mM65Sp&tab=1&lng=7bcc7943657b5a5644879ef46a7310bf&mapMode=0&mpx=09410114%3A37.5655303%2C126.9413606%3AZ11%3A0.0344613%2C0.0142584&lat=6064208bd53ffda4b683c0a701e14552&dlevel=12&enc=b64&menu=location" 
-target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1518060235025_1798109639" 
-width="460" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" 
-style="vertical-align:top;"/></a></td> </tr> <tr> <td> 
-<table cellpadding="0" cellspacing="0" width="100%"> <tr> 
-<td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px;
- border-left:1px solid #cecece; border-bottom:1px solid #cecece;"> 
- <span style="font-family: tahoma; font-size: 11px; color:#666;">2018.2.8</span>
- &nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;
- <a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" 
- href="https://map.naver.com/index.nhn?searchCoord=232c32cf1f846a336b96c00355ccb2e37c69bb19dc8b502844b52d6fe0b77d49&query=7ZKN7ISx67mM65Sp&tab=1&lng=7bcc7943657b5a5644879ef46a7310bf&mapMode=0&mpx=09410114%3A37.5655303%2C126.9413606%3AZ11%3A0.0344613%2C0.0142584&lat=6064208bd53ffda4b683c0a701e14552&dlevel=12&enc=b64&menu=location" 
- target="_blank">지도 크게 보기</a> </td> <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; 
- border-right:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="float:right;"><span style="font-size:9px;
-  font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; 
-  color:#2db400; text-decoration:none;" href="http://www.nhncorp.com" target="_blank">NAVER Corp.</a></span> </td> </tr> </table> </td>
-   </tr> </table>
-</div></center>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+ 
+ <table class="w3-table w3-bordered" >
+ <tr class="w3-border-top"><td class="w3-center">번호</td><td class="w3-center">사진</td><td  class="w3-center">제목</td><td class="w3-center">작성자</td><td class="w3-center">추천</td><td class="w3-center">조회</td><td class="w3-center">상태</td><td class="w3-center">등록일</td></tr>
 
 
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-16">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> 서울시 마포구<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 123456<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
+<tr><td class="w3-center">8</td><td class="w3-center"><img src="../images/peperomia.PNG" width="100px"></td>
+<td rowspan="2" class="w3-center"><div class="w3-container w3-padding-bottom " style="height: 50%;">요즘 텀블러에서 핫하던데<br></div>
+<div class="w3-container"><label><b>식물이름:</b></label>페페로미아</div></td>
+<td class="w3-center">내아비스</td><td class="w3-center">15</td><td class="w3-center">340</td>
+<td class="w3-center"><span class="w3-tag w3-green">선정</span></td><td class="w3-center">2018-02-22</td></tr>
+
+<tr><td class="w3-center">8</td><td class="w3-center"><img src="../images/peperomia.PNG" width="100px"></td><td class="w3-center">요즘 텀블러에서 핫하던데</td>
+<td class="w3-center">내아비스</td><td class="w3-center">15</td><td class="w3-center">340</td>
+<td class="w3-center"><span class="w3-tag w3-blue">보류</span></td><td class="w3-center">2018-02-22</td></tr>
+
+<tr><td class="w3-center">8</td><td class="w3-center"><img src="../images/peperomia.PNG" width="100px"></td><td class="w3-center">요즘 텀블러에서 핫하던데</td>
+<td class="w3-center">내아비스</td><td class="w3-center">15</td><td class="w3-center">340</td>
+<td class="w3-center"><span class="w3-tag">검토</span></td><td class="w3-center">2018-02-22</td></tr>
+
+<tr><td class="w3-center">8</td><td class="w3-center"><img src="../images/peperomia.PNG" width="100px"></td><td class="w3-center">요즘 텀블러에서 핫하던데</td>
+<td class="w3-center">내아비스</td><td class="w3-center">15</td><td class="w3-center">340</td>
+<td class="w3-center"><span class="w3-tag w3-red">불가</span></td><td class="w3-center">2018-02-22</td></tr>
+
+<tr><td class="w3-center">8</td><td class="w3-center"><img src="../images/peperomia.PNG" width="100px"></td><td class="w3-center">요즘 텀블러에서 핫하던데</td>
+<td class="w3-center">내아비스</td><td class="w3-center">15</td><td class="w3-center">340</td>
+<td class="w3-center"><span class="w3-tag">검토</span></td><td class="w3-center">2018-02-22</td></tr>
+
+<tr><td class="w3-center">8</td><td class="w3-center"><img src="../images/peperomia.PNG" width="100px"></td><td class="w3-center">요즘 텀블러에서 핫하던데</td>
+<td class="w3-center">내아비스</td><td class="w3-center">15</td><td class="w3-center">340</td>
+<td class="w3-center"><span class="w3-tag">검토</span></td><td class="w3-center">2018-02-22</td></tr>
+
+
+
+ 
+ </table>
+ 
+ <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
+ </div>
 
 
 
