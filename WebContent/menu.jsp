@@ -36,11 +36,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16 w3-white">
+  <div class="w3-container w3-display-container w3-padding-16 w3-white ">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-   <h3 class="w3-wide"><b>&nbsp;&nbsp;GLOBAL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PLANT</b></h3>
+  <div onclick="location.href='<%=request.getContextPath()%>/view/main.jsp';" > <h3 class="w3-wide" style="cursor:pointer"><b>&nbsp;&nbsp;GLOBAL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PLANT</b></h3></div>
   </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+  <div class="w3-padding-64 w3-medium w3-text-grey " style="font-weight:bold">
      <a href="<%= request.getContextPath() %>/view/main.jsp" class="w3-bar-item w3-button" >메인</a>
      <a href="<%= request.getContextPath() %>/view/auction.jsp?select=auction" class="w3-bar-item w3-button
       <%= (select!=null&&select.equals("auction"))?"w3-light-grey":"" %>" >경매</a>
@@ -68,6 +68,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     
    
   </div>
+  <div class="w3-small">
  <% if (!login){%>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('login').style.display='block'">로그인</a>
    <a href="<%= request.getContextPath() %>/view/join.jsp" class="w3-bar-item w3-button w3-padding">회원가입</a>  <%}else{
@@ -95,7 +96,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
  <td colspan="2"> <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%">&nbsp;
  <img src="<%= request.getContextPath() %>/images/sample.PNG" style="width:40%"></td><tr>
  </table> --%>
- 
+ </div>
  <!--  -->
 </nav>
 
@@ -121,7 +122,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left"><%=title %></p>
-    <p class="w3-right "><font class="w3-medium "><%if(login){%><%=loginId %>님 환영합니다.&nbsp;&nbsp;<%} %></font>
+    <p class="w3-right "><font class="w3-small "><%if(login){%><%=loginId %>님 환영합니다.&nbsp;&nbsp;<%} %></font>
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search" onclick="document.getElementById('search').style.display='block'" style="cursor:pointer"></i>
     </p>
@@ -129,16 +130,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <!-- 검색 모달 -->
     
     <div id="search" class="w3-modal">
-    <div class="w3-modal-content w3-card-4  w3-animate-zoom" style="max-width:600px">
-      <header class="w3-container"> 
+    <div class="w3-modal-content w3-card-4  w3-animate-zoom " style="max-width:600px">
+      <header class="w3-container w3-black"> 
         <span onclick="document.getElementById('search').style.display='none'" 
         class="w3-button w3-display-topright w3-medium">&times;</span>
-        <h4>검색</h4>
+        <h5>검색</h5>
       </header>
       <div class="w3-container w3-white">
        <span class="w3-center w3-medium w3-margin-top"><p>식물 이름을 입력하세요</p></span>
-        <form><input class="w3-input w3-center w3-border w3-medium w3-margin-top w3-margin-bottom w3-padding" name="keyword" type="text">
-       <div class="w3-center"><button class="w3-button w3-black w3-medium">검색</button></form></div>
+        <form><input class="w3-input w3-center w3-border w3-medium w3-margin-top w3-margin-bottom w3-padding" name="keyword" type="text" style="display: block; width: 100%;">
+       <div class="w3-center"><button class="w3-button w3-black w3-small">검색</button></form></div>
         
       </div>
       <footer class="w3-container w3-white">
@@ -153,7 +154,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
  <div id="login" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-small" style="max-width:600px">
 
       <div class="w3-center"><br>
         <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>

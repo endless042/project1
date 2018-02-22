@@ -31,7 +31,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <center><div class="w3-container" style="padding-bottom: 64px;">
 
- <h2 class="w3-wide w3-center">글쓰기</h2>
+ <h4 class="w3-wide w3-center">글쓰기</h4>
 <br>
 <form method="post" name="writeform" action="<%=request.getContextPath() %>/view/board/writePro.jsp" >
 <input type="hidden" name="boardid" value="<%=boardid%>">
@@ -44,7 +44,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
 
-<table class="w3-table w3-bordered  w3-bordered"  style="width:90%;" >
+<table class="w3-table w3-bordered  w3-bordered w3-small"  style="width:90%;" >
    
    <tr>
     <td  width="70" class=" w3-center "  ><label><b>이 름</b></label></td>

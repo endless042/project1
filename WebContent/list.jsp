@@ -60,10 +60,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <p class="w3-left" style="padding-left:30px;">
     </p>
     
-    <div class="w3-container ">
+    <div class="w3-container w3-small">
  
     	<p class="w3-right w3-padding-right-large">
-    	<a href="writeForm.jsp"><button class="w3-button w3-green">글쓰기</button></a>
+    	<a href="writeForm.jsp"><button class="w3-button w3-green w3-small">글쓰기</button></a>
     	</p>
     	<%
     	
@@ -71,7 +71,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     		
     	
     	%>
-    	<table class="w3-table w3-border w3-hoverable w3-center" width="90%">
+    	<table class="w3-table w3-border w3-hoverable w3-center w3-small" width="90%">
     	<tr class="w3-light-grey">
     	<td class="w3-center">저장된 글이 없습니다.</td>
     	
@@ -79,7 +79,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     	
     	<% }else{ %>
     	(전체글:<%=count %>)
-    	<table class="w3-table  w3-border-top w3-border-bottom" width="90%">
+    	<table class="w3-table  w3-border-top w3-border-bottom  w3-small" width="90%">
     	<tr class="  w3-border-bottom">
     	<td class="w3-center " width="50"><b>번호</b></td>
     	<td class="w3-center" width="250"><b>제목</b></td>
@@ -122,7 +122,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     	
     	
     	<!-- 하단 페이징  -->
-    	<div class="w3-center w3-section">
+    	<div class="w3-center w3-section w3-small">
     	
     	<% int bottomLine=5;
     	

@@ -13,8 +13,8 @@
 
 <div class="w3-cell-row w3-margin-bottom" >
 
-<div class="w3-bar w3-white "><span class="w3-tag w3-xlarge w3-black w3-margin-top w3-margin-right">1차</span>
-<span class="w3-tag w3-xxlarge w3-white w3-margin-top w3-margin-right">태국 은빛 알로카시아</span><hr></div>
+<div class="w3-bar w3-white "><span class="w3-tag w3-medium w3-black w3-margin-top w3-margin-right">1차</span>
+<span class="w3-tag w3-xxlarge w3-white w3-margin-top w3-margin-right"><h4>태국 은빛 알로카시아</h4></span><hr></div>
  <!-- 사진쪽 div  -->
   <div class="w3-container w3-half w3-cell w3-padding">
   <div class="w3-display-container w3-text-white">
@@ -23,7 +23,8 @@
 
   </div></div>
 
-  <div class="w3-container w3-half w3-cell w3-cell-bottom" >
+<!-- 상세정보쪽 div -->
+  <div class="w3-container w3-half w3-cell w3-cell-bottom w3-small " >
     <table ><tr><td class="w3-border-bottom">
     
     <p><b>품명 : </b>Alocasia lauterbachiana<br>
@@ -39,7 +40,7 @@
    
       <p><b>진행기간 : </b>2018-02-09 ~ 2018-02-18</p>
  </td><tr><tr><td class="w3-border-bottom">
-    <br><label><b>진행상황</b></label><br>
+    <p><label><b>진행상황</b></label><br>
     
     <div class="w3-light-grey w3-tiny" >
   <div class="w3-container w3-red w3-center" style="width:50%">50%</div>
@@ -63,9 +64,9 @@
 <tr><td>
 
 <div class="w3-bar w3-white w3-section  ">
-<input type="button" style="width: 33%;" class="w3-button  w3-green  w3-right  w3-border-top w3-border-left w3-border-bottom" value="입찰하기">
-<input type="button" style="width: 33%;" class="w3-button   w3-white   w3-right w3-border-top w3-border-left w3-border-bottom "  value="찜하기">
-<input type="button" style="width: 33%;"  class="w3-button w3-white   w3-border-top w3-border-left w3-border-bottom w3-right "  value="공유">
+<input type="button" style="width: 33%;" class="w3-button w3-bar-item w3-green  w3-right  w3-border-top w3-border-left w3-border-bottom" value="입찰하기">
+<input type="button" style="width: 33%;" class="w3-button  w3-bar-item w3-white   w3-right w3-border-top w3-border-left w3-border-bottom "  value="찜하기">
+<input type="button" style="width: 33%;"  class="w3-button w3-bar-item w3-white   w3-border-top w3-border-left w3-border-bottom w3-right "  value="공유">
 
  
    
@@ -81,7 +82,7 @@
   </div>
 <hr>
 
-<div class="w3-bar w3-border" >
+<div class="w3-bar w3-border w3-small" >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button w3-green w3-border-right">정보</a>
   <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
   <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
@@ -114,7 +115,7 @@
   </div>
   
  
-  <div class="w3-bar w3-border " >
+  <div class="w3-bar w3-border w3-small" >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
   <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-green w3-border-right">문의</a>
   <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
@@ -127,7 +128,7 @@
   <jsp:include page="/list.jsp"></jsp:include>
   </div>
   
-  <div class="w3-bar w3-border" >
+  <div class="w3-bar w3-border w3-small" >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
   <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
   <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-green w3-border-right">후기</a>
@@ -139,7 +140,7 @@
   <jsp:include page="/list.jsp"></jsp:include>
   </div>
   
-  <div class="w3-bar w3-border" >
+  <div class="w3-bar w3-border w3-small" >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
   <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
   <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>

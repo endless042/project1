@@ -37,7 +37,7 @@ history.go(-1);
 <jsp:include page="/menu.jsp"/>
  
 
-<div class="w3-container w3-padding-64" width="100%"  >
+<div class="w3-container w3-padding-64"  width="100%"  >
   
 
  <div class="w3-card-4 w3-center w3-padding-24"  style="max-width:900px; padding:20px;" >
@@ -45,7 +45,7 @@ history.go(-1);
  
   
   
-    <div class="w3-bar w3-border" style="max-width:900px; width:90%;">
+    <div class="w3-bar w3-border w3-small" style="max-width:900px; width:90%;">
     <button style="width:25%" class="w3-bar-item w3-button tablink <%=(select!=null&&select.equals("auserlist"))?"w3-green":"" %>  " onclick="location.href='admin_userlist.jsp?select=auserlist';">회원목록</button>
     <button style="width:25%" class="w3-bar-item w3-button tablink w3-hide-small <%=(select!=null&&select.equals("aauction"))?"w3-green":"" %> " onclick="location.href='admin_auction.jsp?select=aauction';">경매</button>
     <button style="width:25%" class="w3-bar-item w3-button tablink w3-hide-small <%=(select!=null&&select.equals("agpurchase"))?"w3-green":"" %> " onclick="location.href='admin_gpurchase.jsp?select=agpurchase';">공동구매</button>

@@ -25,15 +25,15 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <center>
 
 <div class="w3-container" style="padding-bottom: 64px;">
-	<h2 class="w3-wide w3-center">글 삭제</h2><br>
+	<h4 class="w3-wide w3-center">글 삭제</h4><br>
 	
 	<form method="post" name="delForm"  action="deletePro.jsp?pageNum=<%=pageNum %>" onsubmit="return deleteSave()">
-	<table class="table-bordered" width="360">
+	<table class="table-bordered w3-small" width="360">
 	
 	<tr height="30"><td align="center"><b>비밀번호를 입력해주세요.</b></td></tr>
 	<tr height="30"></tr>
 	<tr height="30">	
-	<td align="center" style="padding-bottom:50px; ">비밀번호:
+	<td align="center" style="padding-bottom:50px; "> 
 	<input type="password" class="w3-input w3-border" style="display: inline-block; width: 200px;" name="passwd" size="8" maxlength="12">
 	<input type="hidden" name="num" value="<%=num%>">	 
 	</td></tr><tr height="30">

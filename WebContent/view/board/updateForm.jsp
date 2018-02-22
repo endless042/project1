@@ -35,12 +35,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </head>
 <body>
 
- 
-
-<p class="w3-left"  style="padding-left:30px;"></p>
 <div class="w3-container" style="padding-bottom: 64px;">
 
-<center><h2 class="w3-wide w3-center">글수정</h2>
+<center><h4 class="w3-wide w3-center">글 수정</h4>
 <br>
 <form method="post" name="writeform" action="<%=request.getContextPath() %>/view/board/updatePro.jsp" >
 <input type="hidden" name="boardid" value="<%=boardid%>">
@@ -49,38 +46,38 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
 
-<table class="w3-table w3-bordered "  style="width:90%;" >
+<table class="w3-table w3-bordered  w3-bordered w3-small"  style="width:90%;" >
    
    <tr>
-    <td  width="70"   align="center">이 름</td>
+      <td  width="70" class=" w3-center "  ><label><b>이 름</b></label></td>
     <td  width="330">
-       <input type="text"  size="10" maxlength="10" name="writer" value="<%=article.getWriter()%>"></td>
+       <input type="text"  class="w3-input w3-border-0 w3-hover-light-grey" style="width:300px;" size="10" maxlength="12" name="writer" value="<%=article.getWriter()%>"></td>
   </tr>
   <tr>
-    <td  width="70"   align="center" >제 목
+    <td  width="70" class=" w3-center "    ><label><b>제 목</b></label>
     </td>
     <td width="330">
  
  
-       <input type="text" size="40" maxlength="50" name="subject" value="<%=article.getSubject()%>">
+       <input type="text" size="40" maxlength="50" name="subject"  class="w3-input w3-border-0 w3-hover-light-grey" value="<%=article.getSubject()%>">
 	
    
    </td>
   </tr>
   <tr>
-    <td  width="70"   align="center">Email</td>
+    <td  width="70" class=" w3-center " ><label><b>Email</b></label></td>
     <td  width="330">
-       <input type="text" size="40" maxlength="30" name="email" value="<%=article.getEmail()%>"></td>
+       <input type="text" size="40" maxlength="30" name="email" class="w3-input w3-border-0 w3-hover-light-grey" value="<%=article.getEmail()%>"></td>
   </tr>
   <tr>
-    <td  width="70"   align="center" >내 용</td>
+   <td  width="70" class=" w3-center " ><label><b>내 용</b></label></td>
     <td  width="330" >
-     <textarea name="content" rows="13" cols="40"><%=article.getContent() %></textarea> </td>
+     <textarea name="content" rows="13"  cols="40" class="w3-input w3-border-0 w3-hover-light-grey"><%=article.getContent() %></textarea> </td>
   </tr>
   <tr>
-    <td  width="70"   align="center" >비밀번호</td>
+   <td  width="70" class=" w3-center " ><label><b>비밀번호</b></label></td>
     <td  width="330" >
-     <input type="password" size="8" maxlength="12" name="passwd" > 
+     <input type="password" size="8" maxlength="12" name="passwd" style="width:300px;"  class="w3-input w3-border-0 w3-hover-light-grey" > 
 	 </td>
   </tr>
 <tr>      

@@ -44,7 +44,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <div class="container w3-responsive w3-padding-64 ">
 <div  style="padding-bottom: 64px;">
  
-<table class="w3-table w3-bordered " style="width: 90%; "  >
+<table class="w3-table w3-bordered w3-small" style="width: 90%; "  >
 <tr ><td colspan="4"><h5><b><%= article.getSubject()%></b></h5></td></tr>
 <tr height="30">
 <td width="25%" align="center"><b>글번호</b></td>

@@ -9,8 +9,8 @@
  <div class="w3-container w3-padding-32" width="90%">
  
  
- <table class="w3-table w3-bordered w3-small">
- <tr class="w3-border-top"><td class="w3-center" width="50px;"  >번호</td><td class="w3-center">사진</td><td  class="w3-center">제목</td>
+ <table class="w3-table w3-bordered w3-small" >
+ <tr class="w3-border-top"><td class="w3-center"  >번호</td><td class="w3-center">사진</td><td  class="w3-center">제목</td>
  <td class="w3-center">작성자</td><td class="w3-center">추천</td><td class="w3-center">상태</td><td class="w3-center">등록일</td><td class="w3-center">조회</td></tr>
 
 
@@ -108,7 +108,7 @@
  </table>
  
  <!-- Pagination -->
-  <div class="w3-center w3-padding-32 w3-small">
+  <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
       <a href="#" class="w3-bar-item w3-black w3-button">1</a>

@@ -14,7 +14,7 @@
  
   
 <div class="w3-container" >
-  <form class="w3-container"  action="joinPro.jsp">
+  <form class="w3-container w3-small"  action="joinPro.jsp">
 
  
   <p>  <b><font color="red">&nbsp;&nbsp;&nbsp;*</font></b> 표시가 된 항목은 필수 입력입니다.</p>

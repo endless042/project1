@@ -10,7 +10,7 @@
 <body>
 
 
- <div class="w3-black w3-center w3-padding-24" style="margin-top:40px;">Powered by <a href="/project/view/main.jsp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
+ <div class="w3-black w3-center w3-padding-24 w3-small" style="margin-top:40px;">Powered by <a href="/project/view/main.jsp" title="W3.CSS" target="_blank" class="w3-hover-opacity">GLOBAL PLANT</a></div>
 
 
 </div>
