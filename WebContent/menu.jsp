@@ -13,6 +13,7 @@
        
     String loginId=(String)session.getAttribute("loginId");
     String levelCk=(String)session.getAttribute("levelCk");
+    String userName=(String)session.getAttribute("userName");
     	boolean login = (loginId==null?false:true);
     %>
     
@@ -71,11 +72,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-small">
  <% if (!login){%>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('login').style.display='block'">로그인</a>
-   <a href="<%= request.getContextPath() %>/view/join.jsp" class="w3-bar-item w3-button w3-padding">회원가입</a>  <%}else{
+   <a href="<%= request.getContextPath() %>/view/join2.jsp" class="w3-bar-item w3-button w3-padding">회원가입</a>  <%}else{
    
    	if(levelCk.equals("0")){%> <a href="<%= request.getContextPath() %>/admin/admin_userlist.jsp?select=auserlist" class="w3-bar-item w3-button w3-padding">관리자 페이지</a>
 	   <a href="<%= request.getContextPath() %>/view/logoutPro.jsp" class="w3-bar-item w3-button w3-padding">로그아웃</a><%}else{ %>
-	    <a href="<%= request.getContextPath() %>/view/main.jsp" class="w3-bar-item w3-button w3-padding">마이페이지</a>
+	    <a href="<%= request.getContextPath() %>/mypage/mypage.jsp?select=myinfo" class="w3-bar-item w3-button w3-padding">마이페이지</a>
 	   <a href="<%= request.getContextPath() %>/view/logoutPro.jsp" class="w3-bar-item w3-button w3-padding">로그아웃</a>
 	   <%}}%>
    
@@ -122,8 +123,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left"><%=title %></p>
-    <p class="w3-right "><font class="w3-small "><%if(login){%><%=loginId %>님 환영합니다.&nbsp;&nbsp;<%} %></font>
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
+    <p class="w3-right "><font class="w3-small "><%if(login){%><%=userName %>님 환영합니다.&nbsp;&nbsp;<%} %></font>
+      <i class="fa fa-shopping-cart w3-margin-right" onclick="location.href='<%=request.getContextPath()%>/mypage/mypage.jsp?select=cart'" style="cursor:pointer"></i>
       <i class="fa fa-search" onclick="document.getElementById('search').style.display='block'" style="cursor:pointer"></i>
     </p>
     

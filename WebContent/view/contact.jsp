@@ -9,7 +9,7 @@
  
 
  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64"  id="contact">
+  <div class="w3-container w3-content w3-padding-64 w3-small"  id="contact">
   <h2 class="w3-wide w3-center">ABOUT US</h2>
   <div class="w3-row w3-padding-16">sdgsdgsdgsd</div>
   
@@ -43,7 +43,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
     <div class="w3-row w3-padding-16">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
+      <div class="w3-col m6 w3-small w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i> 서울시 마포구<br>
         <i class="fa fa-phone" style="width:30px"></i> Phone: +00 123456<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>

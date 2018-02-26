@@ -43,7 +43,7 @@
     <p><label><b>진행상황</b></label><br>
     
     <div class="w3-light-grey w3-tiny" >
-  <div class="w3-container w3-red w3-center" style="width:50%">50%</div>
+  <div class="w3-container w3-red w3-center w3-margin-bottom" style="width:50%">50%</div>
 </div> <center>목표 수량 50개 중 현재  25개 달성</center><br>
 </td></tr><tr><td class="w3-border-bottom" >
 

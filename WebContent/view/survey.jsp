@@ -4,7 +4,15 @@
 <html>
 <title>Plant shop</title>
 <meta charset="UTF-8">
+<style type="text/css">
+a {
+text-decoration: none;
+}
 
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+</style>
 
  <div class="w3-container w3-padding-32" width="90%">
  
@@ -22,7 +30,7 @@
 <td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
 <img src="../images/peperomia.PNG" width="100px"></div></span></td>
 <td><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  요즘 텀블러에서 자주 보이는 이 식물
+ <a href="surveyview.jsp">요즘 텀블러에서 자주 보이는 이 식물</a>
 </div></span></td>
 <td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
   키우자
@@ -52,7 +60,7 @@
 15
 </div></span></td>
 <td class="w3-center"><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- <span class="w3-tag w3-blue">보류</span>
+ <span class="w3-tag w3-black">검토</span>
 </div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
  2018-02-22
 </div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
@@ -73,7 +81,7 @@
 15
 </div></span></td>
 <td class="w3-center"><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- <span class="w3-tag w3-blue">보류</span>
+ <span class="w3-tag w3-black">검토</span>
 </div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
  2018-02-22
 </div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
@@ -95,7 +103,7 @@
 15
 </div></span></td>
 <td class="w3-center"><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- <span class="w3-tag w3-blue">보류</span>
+ <span class="w3-tag w3-green">선정</span>
 </div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
  2018-02-22
 </div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">

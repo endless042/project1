@@ -83,7 +83,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <tr>
     <td  width="70" class=" w3-center " ><label><b>비밀번호</b></label></td>
     <td  width="330" >
-     <input type="password" size="8" maxlength="12" name="passwd"  style="width:300px;"  class="w3-input w3-border-0 w3-hover-light-grey"> 
+     <input type="password" size="8" maxlength="12" name="passwd"  style="width:300px;" required="required" class="w3-input w3-border-0 w3-hover-light-grey"> 
 	 </td>
   </tr>
 <tr>      

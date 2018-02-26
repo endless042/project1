@@ -9,7 +9,7 @@
  
  
 
-<div class="w3-container w3-padding-64" width="100%" style="margin-bottom: 150px; " >
+<div class="w3-container w3-padding-64 w3-small" width="100%" style="margin-bottom: 150px; " >
   
 <table align="center" width="100%" style="max-width:600px"><tr ><td>
  <div class="w3-card-4 w3-center " style="max-width:600px" >

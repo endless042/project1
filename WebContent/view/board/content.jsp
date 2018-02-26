@@ -66,14 +66,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <tr height="30">
 <td colspan="4" class="w3-center">
-<input type="button" class="w3-button w3-hover-black" value="수정" onclick="document.location.href='updateForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+<input type="button" class="w3-button w3-black " value="수정" onclick="document.location.href='updateForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<input type="button" class="w3-button w3-hover-black" value="삭제" onclick="document.location.href='deleteForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+<input type="button" class="w3-button w3-black " value="삭제" onclick="document.location.href='deleteForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<input type="button" class="w3-button w3-hover-black" value="답글쓰기" onclick="document.location.href='writeForm.jsp?num=<%=num%>&ref=<%=ref%>&re_step=<%=re_step%>&re_level=<%=re_level%>&pageNum=<%=pageNum%>'">
+<input type="button" class="w3-button w3-black " value="답글" onclick="document.location.href='writeForm.jsp?num=<%=num%>&ref=<%=ref%>&re_step=<%=re_step%>&re_level=<%=re_level%>&pageNum=<%=pageNum%>'">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<input type="button" class="w3-button w3-hover-black" value="목록" onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">
-</td></tr></table>
+<input type="button" class="w3-button w3-black " value="목록" onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">
+</td></tr><tr><td colspan="4"><b>댓글</b></td></tr>
+<tr><td colspan="4">
+ <jsp:include page="../../reply/list.jsp"></jsp:include></td></tr>
+</table>
 
 
 </div>

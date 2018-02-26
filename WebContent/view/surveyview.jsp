@@ -5,122 +5,44 @@
 <title>Plant shop</title>
 <meta charset="UTF-8">
 
-
- <div class="w3-container w3-padding-32" width="90%">
+ <center>
+<div class="container w3-center w3-responsive w3-padding-64 ">
+<div  style="padding-bottom: 64px;">
  
- 
- <table class="w3-table w3-bordered w3-small" >
- <tr class="w3-border-top"><td class="w3-center"  >번호</td><td class="w3-center">사진</td><td  class="w3-center">제목</td>
- <td class="w3-center">작성자</td><td class="w3-center">추천</td><td class="w3-center">상태</td><td class="w3-center">등록일</td><td class="w3-center">조회</td></tr>
+<table class="w3-table w3-bordered w3-small" style="width: 90%; "  >
+<tr ><td colspan="4"><h5><b>요즘 텀블러에서 자주 보이는 이 식물</b></h5></td></tr>
+<tr height="30">
+<td width="25%" align="center"><b>글번호</b></td>
+<td width="25%" align="center">8</td>
+<td width="25%" align="center"><b>조회수</b></td>
+<td width="25%" align="center">340</td>
+</tr>
+
+<tr height="30">
+<td width="25%" align="center"><b>작성자</b></td>
+<td width="25%" align="center">키우자</td>
+<td width="25%" align="center"><b>작성일</b></td>
+<td width="25%" align="center" >2018-02-22</td>
+</tr>
 
 
+<tr height="30">
+<td width="100%" align="left" colspan="4" style="padding: 50px;"><pre>ㄴㅇㅎㄴㅇㅎㄴㅇㅎ</pre></td></tr>
 
-<tr><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-8
-</div></span></td>
-
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-<img src="../images/peperomia.PNG" width="100px"></div></span></td>
-<td><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  요즘 텀블러에서 자주 보이는 이 식물
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  키우자
-</div></span></td><td class="w3-center w3-cell-middle"> <span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-15
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- <span class="w3-tag w3-blue">보류</span>
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- 2018-02-22
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-340
-</div></span></td></tr>
-
-<tr><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-8
-</div></span></td>
-
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-<img src="../images/peperomia.PNG" width="100px"></div></span></td>
-<td><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  요즘 텀블러에서 자주 보이는 이 식물
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  키우자
-</div></span></td><td class="w3-center w3-cell-middle"> <span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-15
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- <span class="w3-tag w3-blue">보류</span>
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- 2018-02-22
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-340
-</div></span></td></tr>
-<tr><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-8
-</div></span></td>
-
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-<img src="../images/peperomia.PNG" width="100px"></div></span></td>
-<td><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  요즘 텀블러에서 자주 보이는 이 식물
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  키우자
-</div></span></td><td class="w3-center w3-cell-middle"> <span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-15
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- <span class="w3-tag w3-blue">보류</span>
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- 2018-02-22
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-340
-</div></span></td></tr>
-
-<tr><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-8
-</div></span></td>
-
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-<img src="../images/peperomia.PNG" width="100px"></div></span></td>
-<td><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  요즘 텀블러에서 자주 보이는 이 식물
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-  키우자
-</div></span></td><td class="w3-center w3-cell-middle"> <span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-15
-</div></span></td>
-<td class="w3-center"><span style="width: 100%;"><div class="  w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- <span class="w3-tag w3-blue">보류</span>
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
- 2018-02-22
-</div></span></td><td class="w3-center"><span style="width: 100%;"><div class=" w3-cell w3-cell-middle" style="height: 100px; width: 100%;">
-340
-</div></span></td></tr>
+<tr height="30">
+<td colspan="4" class="w3-center">
+<input type="button" class="w3-button w3-hover-black" value="수정" onclick="document.location.href='#'">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="w3-button w3-hover-black" value="삭제" onclick="document.location.href='#'">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="w3-button w3-hover-black" value="답글쓰기" onclick="document.location.href='#'">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="w3-button w3-hover-black" value="목록" onclick="document.location.href='#'">
+</td></tr></table>
 
 
-
- 
- </table>
- 
- <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
+</div>
  </div>
-
-
-
+</center>
   <!-- End page content -->
  

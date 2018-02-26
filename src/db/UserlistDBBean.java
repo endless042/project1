@@ -148,6 +148,55 @@ public class UserlistDBBean {
 			return user;
 		
 		}
+	public UserlistDataBean getUser(String id) {
+		
+		
+		Connection con=getConnection();
+		PreparedStatement pstmt=null;
+		ResultSet rs=null;
+		String sql="";
+		UserlistDataBean user=null;
+		
+		try {
+			con=getConnection();
+			
+		
+			sql="select * from userlist where id=?";
+			pstmt=con.prepareStatement(sql);
+			
+			pstmt.setString(1, id);
+			
+			
+			rs=pstmt.executeQuery();
+			
+			user=new UserlistDataBean();
+			if(rs.next()) {
+					
+				user.setNum(rs.getInt("num"));
+				user.setUlevel(rs.getString("ulevel"));
+				user.setName(rs.getString("name"));
+				user.setId(rs.getString("id"));
+				user.setPwd(rs.getString("pwd"));
+				user.setBdate(rs.getString("bdate"));
+				user.setAddr(rs.getString("addr"));
+				user.setTel(rs.getString("tel"));
+				user.setEmail(rs.getString("email"));
+				user.setCdate(rs.getDate("cdate"));
+				user.setPoint(rs.getString("point"));
+
+				
+		
+			
+			}	else {return null;}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			close(con, rs, pstmt);
+		}
+			
+		return user;
+	
+	}
 	
 	public int loginCheck(String id,String pwd) {
 		int ck=-1;
@@ -341,5 +390,3 @@ public int updateUser(UserlistDataBean user) {
 }
 
 }
-			
-

@@ -41,6 +41,7 @@ history.go(-1);		//바로 전 화면으로 이동(updateForm.jsp)
 				System.out.println("Login : "+user); 
 				session.setAttribute("loginId", tryid);
 				session.setAttribute("levelCk", user.getUlevel());
+				session.setAttribute("userName", user.getName());
 				%><meta http-equiv="Refresh" content="0;url=main.jsp"> 
 				
 				<%};

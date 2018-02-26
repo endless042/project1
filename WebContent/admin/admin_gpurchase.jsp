@@ -31,7 +31,7 @@
     		
     	
     	%>
-    	<table class="w3-table w3-border w3-hoverable w3-center" width="90%">
+    	<table class="w3-table w3-border w3-hoverable w3-small w3-center" width="90%">
     	<tr class="w3-light-grey">
     	<td class="w3-center">회원이 없습니다.</td>
     	
