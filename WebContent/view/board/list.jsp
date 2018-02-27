@@ -101,7 +101,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     				
     				%> <img src="../../images/level.gif" width="<%=wid %>" height="16">
     				
-    				<%} %> <a href="content.jsp?num=<%=article.getNum() %>&pageNum=<%=currentPage %>">
+    				<%} %> <a href="<%=request.getContextPath() %>/view/board/content.jsp?num=<%=article.getNum() %>&pageNum=<%=currentPage %>">
     				<%=article.getSubject() %></a> </td>
     				<td class="w3-center" width="100"><%=article.getWriter() %></td>
     				<td class="w3-center" width="150">

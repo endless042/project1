@@ -20,5 +20,8 @@
 방명록에 메시지를 남겼습니다.
 <br/>
 <a href="list.jsp">[목록 보기]</a>
+<%
+String preuri=request.getParameter("cururi"); 
+response.sendRedirect(preuri); %>
 </body>
 </html>

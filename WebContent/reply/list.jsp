@@ -24,7 +24,7 @@
 <title>방명록 메시지 목록</title>
 </head>
 <body>
-	<div class="w3-container w3-padding-24 w3-small"  >
+	<div class="w3-container  w3-margin-bottom w3-small"  >
 
 
 		<c:if test="${!viewData.isEmpty() }">
@@ -37,10 +37,10 @@
 					  
     <li class="w3-bar">
       <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white   w3-right">&times;</span>
-      <span class="w3-small w3-opacity w3-right">2018-02-27</span>
+     <span class="w3-small w3-opacity w3-right">2018-02-27 PM 07:30</span>
       <div class="w3-bar-item">
-        <span  class="w3-tag w3-medium w3-margin-bottom"><b>${message.guestName }</b></span><br>
-        <span>${message.message }</span>
+         <span class="w3-tag w3-white w3-medium w3-margin-bottom">${message.id }</span><span  class="w3-tag w3-medium w3-margin-bottom "><b>${message.guestName }</b></span><br>
+        <span class="w3-margin-left">${message.message }</span>
       </div>
     </li>
 
@@ -70,7 +70,7 @@
 	<div class="w3-section  w3-center">
 			
 				<c:forEach var="pageNum" begin="1" end="${viewData.pageTotalCount }">
-					<span class="w3-center"><a href="list.jsp?page=${pageNum }" class="w3-bar-item w3-button w3-hover-black">${pageNum}</a></span>
+					<span class="w3-center"><a href="<%=request.getContextPath() %>/reply/list.jsp?page=${pageNum }" class="w3-bar-item w3-button w3-hover-black">${pageNum}</a></span>
 					
 				</c:forEach>
 			
@@ -78,7 +78,7 @@
 		</c:if>
 
 		<div class="w3-container w3-padding-16 w3-card w3-center">
-			<form action="writeMessage.jsp" method="post">
+			<form action="<%=request.getContextPath() %>/reply/writeMessage.jsp" method="post">
 				<div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
 					<div class="w3-half">
 						<input class="w3-input w3-border" type="text" placeholder="이름"
@@ -91,6 +91,7 @@
 				</div>
 				<textarea class="w3-input  w3-border "  placeholder="내용"
 					required name="message"></textarea>
+					<input type="hidden" name="cururi" value="<%= request.getRequestURI()%>">
 				<button class="w3-button w3-black w3-section w3-right w3-padding-small" type="submit">전송</button>
 			</form>
 		</div>

@@ -198,7 +198,12 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
-</script>
+</script><script>
+var titlespan=document.getElementById('title');
+var titletext=document.createTextNode('<%=title%>');
 
+titlespan.appendChild(titletext);
+
+</script>
 </body>
 </html>
