@@ -2,14 +2,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <% String select=request.getParameter("select");
-    	String title=request.getParameter("title");
     	
-    	if(title!=null && title.equals("j")){
-    	title="회원가입";}
-    	
-    	if(title==null){
-    	title="";}%>
-       <%
+      	String title="";
        
     String loginId=(String)session.getAttribute("loginId");
     String levelCk=(String)session.getAttribute("levelCk");
@@ -42,12 +36,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div onclick="location.href='<%=request.getContextPath()%>/view/main.jsp';" > <h3 class="w3-wide" style="cursor:pointer"><b>&nbsp;&nbsp;GLOBAL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PLANT</b></h3></div>
   </div>
   <div class="w3-padding-64 w3-medium w3-text-grey " style="font-weight:bold">
-     <a href="<%= request.getContextPath() %>/view/main.jsp" class="w3-bar-item w3-button" >메인</a>
-     <a href="<%= request.getContextPath() %>/view/auction.jsp?select=auction" class="w3-bar-item w3-button
+     <a href="<%= request.getContextPath() %>/page/index" class="w3-bar-item w3-button" >메인</a>
+     <a href="<%= request.getContextPath() %>/page/auction?select=auction" class="w3-bar-item w3-button
       <%= (select!=null&&select.equals("auction"))?"w3-light-grey":"" %>" >경매</a>
-      <a href="<%= request.getContextPath() %>/view/gpurchase.jsp?select=gpurchase" class="w3-bar-item w3-button 
+      <a href="<%= request.getContextPath() %>/page/gpurchase?select=gpurchase" class="w3-bar-item w3-button 
       <%= (select!=null&&select.equals("gpurchase"))?"w3-light-grey":"" %>" >공동구매</a>
-      <a href="<%= request.getContextPath() %>/view/survey.jsp?select=survey" class="w3-bar-item w3-button 
+      <a href="<%= request.getContextPath() %>/page/survey?select=survey" class="w3-bar-item w3-button 
       <%= (select!=null&&select.equals("survey"))?"w3-light-grey":"" %>" >수입제안</a>
    
 
@@ -56,7 +50,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       게시판 <i class="fa fa-caret-down"></i>
     </a>
     <div id="board" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="<%= request.getContextPath() %>/view/board/list.jsp?select=notice&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("notice"))?"w3-light-grey":"" %>">소식</a>
+      <a href="<%= request.getContextPath() %>/page/notice?select=notice&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("notice"))?"w3-light-grey":"" %>">소식</a>
       <a href="<%= request.getContextPath() %>/view/board/list.jsp?select=review&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("review"))?"w3-light-grey":"" %>">후기</a>
       <a href="<%= request.getContextPath() %>/view/board/list.jsp?select=qna&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("qna"))?"w3-light-grey":"" %>">문의</a>
       <a href="<%= request.getContextPath() %>/view/board/list.jsp?select=community&bdck=on" class="w3-bar-item w3-button <%= (select!=null&&select.equals("community"))?"w3-light-grey":"" %>">커뮤니티</a>
@@ -122,7 +116,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
-    <p class="w3-left"><%=title %></p>
+    <p class="w3-left" id="title"></p>
     <p class="w3-right "><font class="w3-small "><%if(login){%><%=userName %>님 환영합니다.&nbsp;&nbsp;<%} %></font>
       <i class="fa fa-shopping-cart w3-margin-right" onclick="location.href='<%=request.getContextPath()%>/mypage/mypage.jsp?select=cart'" style="cursor:pointer"></i>
       <i class="fa fa-search" onclick="document.getElementById('search').style.display='block'" style="cursor:pointer"></i>

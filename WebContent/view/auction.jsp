@@ -5,7 +5,7 @@
 <title>Plant shop</title>
 <meta charset="UTF-8">
 
-
+<% title="경매"; %>
 
  <div>
 
@@ -31,7 +31,7 @@
          <div class="w3-display-container"><img src="<%= request.getContextPath() %>/images/sample.PNG" class="w3-border-top w3-border-left w3-border-right" style="width:100%; ">
        
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-red" onclick="location.href='aproductview.jsp';">입찰하기</button>
+            <button class="w3-button w3-red" onclick="location.href='<%= request.getContextPath() %>/view/aproductview.jsp';">입찰하기</button>
           </div>
         </div>
       <div class="w3-container w3-border ">

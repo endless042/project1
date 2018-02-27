@@ -31,22 +31,8 @@
 
 			<div>
 				
-<ul class="w3-ul ">
-					<c:forEach var="message" items="${viewData.messageList }">
-					
-					  
-    <li class="w3-bar">
-      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white   w3-right">&times;</span>
-      <span class="w3-small w3-opacity w3-right">2018-02-27</span>
-      <div class="w3-bar-item">
-        <span  class="w3-tag w3-medium w3-margin-bottom"><b>${message.guestName }</b></span><br>
-        <span>${message.message }</span>
-      </div>
-    </li>
 
-  <%-- 
-					
-					<ul class="w3-ul"></ul>
+					<c:forEach var="message" items="${viewData.messageList }">
 					
 					<div class="w3-container w3-card w3-white  w3-margin"><br>
          
@@ -58,13 +44,13 @@
         <button type="button" class="w3-button  w3-green w3-margin-bottom w3-padding-small">Comment</button> 
         <button class="w3-button w3-black w3-margin-bottom w3-padding-small" type="submit" onclick="location.href='confirmDeletion.jsp?messageId=${message.id }'">삭제</button>
       </div>  
-					 --%>
+					
 					
 					
 					
 				
 				</c:forEach>
- </ul>
+
 
 			</div>
 	<div class="w3-section  w3-center">

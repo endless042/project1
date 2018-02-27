@@ -6,7 +6,7 @@
     pageEncoding="UTF-8"%>
   
     <% request.setCharacterEncoding("utf-8"); %>
-
+	<% title="소식"; %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -62,7 +62,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <div class="w3-container w3-padding-64">
  
     	<p class="w3-right w3-padding-right-large">
-    	<a href="writeForm.jsp"><button class="w3-button w3-green w3-small">글쓰기</button></a>
+    	<a href="<%=request.getContextPath() %>/view/board/writeForm.jsp"><button class="w3-button w3-green w3-small">글쓰기</button></a>
     	</p>
     	<%
     	
@@ -135,7 +135,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     		if(endPage>pageCount)endPage=pageCount;
     	
     		if(startPage>bottomLine){%>
-    		 <a href="list.jsp?pageNum=<%=startPage-bottomLine %>" class="w3-bar-item w3-button w3-hover-black">«</a>
+    		 <a href="<%=request.getContextPath() %>/page/notice?pageNum=<%=startPage-bottomLine %>" class="w3-bar-item w3-button w3-hover-black">«</a>
     	
     		<%} %>
     	
@@ -143,15 +143,15 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     		for(int i=startPage;i<=endPage;i++){%>
     	
     		<% 
-    		if(i!=currentPage) {%>  <a href="list.jsp?pageNum=<%=i %>" class="w3-bar-item w3-button w3-hover-black"><%=i %></a> <%}
-    		else {%>  <a href="list.jsp?pageNum=<%=i %>" class="w3-bar-item w3-black w3-button"><%=i %></a> <%}%>
+    		if(i!=currentPage) {%>  <a href="<%=request.getContextPath() %>/page/notice?pageNum=<%=i %>" class="w3-bar-item w3-button w3-hover-black"><%=i %></a> <%}
+    		else {%>  <a href="<%=request.getContextPath() %>/page/notice?pageNum=<%=i %>" class="w3-bar-item w3-black w3-button"><%=i %></a> <%}%>
     		<%}
     	
     	
     		if(endPage<pageCount){
     		%>
     		
-    		 <a href="list.jsp?pageNum=<%=startPage+bottomLine %>" class="w3-bar-item w3-button w3-hover-black">»</a>
+    		 <a href="<%=request.getContextPath() %>/page/notice?pageNum=<%=startPage+bottomLine %>" class="w3-bar-item w3-button w3-hover-black">»</a>
     			<% }	
     	
     	} %>

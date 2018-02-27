@@ -5,7 +5,7 @@
 <title>Plant shop</title>
 <meta charset="UTF-8">
 
-
+<%title="경매"; %>
 
  
  <!-- Section -->

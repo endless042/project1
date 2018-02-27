@@ -50,9 +50,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <td  width="70" class=" w3-center "  ><label><b>이 름</b></label></td>
     <td  width="330">
        <% if(loginId==null){
-       %> <input type="text" class="w3-input w3-border-0 w3-hover-light-grey" style="width:300px;" size="10" maxlength="12" name="writer"><%}else{
+       %> <input type="text" required="required" class="w3-input w3-border-0 w3-hover-light-grey" style="width:300px;" size="10" maxlength="12" name="writer"><%}else{
        
-       %><%=loginId %> <input type="hidden" name="writer" value="<%=loginId%>"><%} %>
+       %><%=loginId %> <input type="hidden"  name="writer" value="<%=loginId%>"><%} %>
       
   </tr>
   <tr>
@@ -62,9 +62,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
  
  	<%if(request.getParameter("num")==null){%>
  	
-       <input type="text" size="40" maxlength="50" name="subject" class="w3-input w3-border-0 w3-hover-light-grey">
+       <input type="text" size="40" maxlength="50" name="subject"  required="required" class="w3-input w3-border-0 w3-hover-light-grey">
        <%}else{ %>
-       <input type="text" size="40" maxlength="50" name="subject" value="[답글]" class="w3-input w3-border-0 w3-hover-light-grey">
+       <input type="text" size="40" maxlength="50" name="subject" value="[답글]" required="required" class="w3-input w3-border-0 w3-hover-light-grey">
        <%} %>
 	
    
@@ -78,7 +78,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <tr>
     <td  width="70" class=" w3-center " ><label><b>내 용</b></label></td>
     <td  width="330" >
-     <textarea name="content" rows="13" cols="40" class="w3-input w3-border-0 w3-hover-light-grey"></textarea> </td>
+     <textarea name="content" rows="13" cols="40" class="w3-input w3-border-0 w3-hover-light-grey" required="required"></textarea> </td>
   </tr>
   <tr>
     <td  width="70" class=" w3-center " ><label><b>비밀번호</b></label></td>

@@ -5,7 +5,7 @@
 <title>Plant shop</title>
 <meta charset="UTF-8">
 
-
+<%title="ABOUT US"; %>
  
 
  <!-- The Contact Section -->

@@ -41,4 +41,22 @@
     <servlet-class>jdbc.DBCPInit</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  
+  <!-- 모델2   -->
+  <servlet>
+ 	<servlet-name>pageController</servlet-name>
+ 	<servlet-class>controller.PageController</servlet-class>
+ 	<init-param>
+ 	<param-name>configFile</param-name>
+ 	<param-value>/WEB-INF/commandHandlerURI.properties</param-value>
+ 	</init-param>
+ 	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>pageController</servlet-name>
+  <url-pattern>/page/*</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

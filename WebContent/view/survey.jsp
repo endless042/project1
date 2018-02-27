@@ -3,6 +3,7 @@
     pageEncoding="UTF-8"%>
 <html>
 <title>Plant shop</title>
+<% title="수입제안"; %>
 <meta charset="UTF-8">
 <style type="text/css">
 a {

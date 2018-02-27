@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
  
  
-  
+  <%title="회원가입"; %>
 
 <div class="w3-container w3-padding-64"  width="100%"  >
   
@@ -34,7 +34,7 @@
 <tr ><td>  <label><b>비밀번호확인<font color="red">&nbsp;&nbsp;&nbsp;*</font></b></label></td><td align="left"><input class="w3-input w3-hover-light-grey" type="password" name="pwdck"   required="required" ><p/></td></tr>
  <tr ><td><label><b>생일<font color="red">&nbsp;&nbsp;&nbsp;*</font></b> </label></td><td><input type="date"  class="w3-input w3-hover-light-grey" name="bdate"  required="required" ><p/></td></tr>
  <tr ><td> <label><b>주소</b></label></td><td><input type="text"  class="w3-input w3-hover-light-grey" name="addr"  ><p/></td></tr>
- <tr ><td><label><b>전화번호</b></label></td><td><input type="text"  class="w3-input w3-hover-light-grey" name="tel" ><p/></td></tr>
+ <tr ><td><label><b>전화번호</b></label></td><td><input type="text" onKeyDown = "javascript:onlyNumberInput(event)" style='IME-MODE: disabled' class="w3-input w3-hover-light-grey" name="tel" placeholder="숫자만 입력"><p/></td></tr>
 <tr ><td>  <label><b>이메일</b></label></td><td> <input type="email"  class="w3-input w3-hover-light-grey" name="email"  ><p/></td></tr>
 
 
@@ -85,6 +85,24 @@
   });
  });
  
+ function onlyNumberInput( Ev )
+ 
+ {
+     if (window.event) // IE코드
+         var code = window.event.keyCode;
+     else // 타브라우저
+         var code = Ev.which;
+  
+     if ((code > 34 && code < 41) || (code > 47 && code < 58) || (code > 95 && code < 106) || code == 8 || code == 9 || code == 13 || code == 46)
+     {
+         window.event.returnValue = true;
+         return;
+     }
+  
+     if (window.event)
+         window.event.returnValue = false;
+     else
+         Ev.preventDefault();}    
 
 </script>
  

@@ -5,7 +5,7 @@
 <title>Plant shop</title>
 <meta charset="UTF-8">
 
-
+<% title="공동구매"; %>
 
  
  <!-- Section -->
@@ -49,9 +49,9 @@
 
 <p>
 
-<select class="w3-select w3-border w3-margin-right" style="width: 100px;" name="quantity">
+<select class="w3-select w3-border w3-margin-right" required="required" style="width: 100px;" name="quantity">
 	<option  selected="selected" >수량 선택</option>
-	<option>1</option>
+	<option onselect="">1</option>
     <option>2</option>
     <option>3</option>
     <option>4</option>
@@ -97,7 +97,7 @@
 </div>
 
 
-  <div class="w3-container w3-section" id="content">
+  <div class="w3-container w3-section  " id="content">
   
   <p>example page</p>
   <p>example page</p>
@@ -115,7 +115,7 @@
   </div>
   
  
-  <div class="w3-bar w3-border w3-small" >
+  <div class="w3-bar w3-border w3-small " >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
   <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-green w3-border-right">문의</a>
   <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
@@ -124,7 +124,7 @@
 </div>
 
 
-  <div class="w3-container w3-section" id="qna">
+  <div class="w3-container w3-section  " id="qna">
   <jsp:include page="/list.jsp"></jsp:include>
   </div>
   
@@ -136,11 +136,11 @@
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div>
   
-   <div class="w3-container w3-section" id="review">
+   <div class="w3-container w3-section  " id="review">
   <jsp:include page="/list.jsp"></jsp:include>
   </div>
   
-  <div class="w3-bar w3-border w3-small" >
+  <div class="w3-bar w3-border w3-small " >
   <a href="#content" style="width:25%" class="w3-bar-item w3-button  w3-border-right">정보</a>
   <a href="#qna" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">문의</a>
   <a href="#review" style="width:25%" class="w3-bar-item w3-button w3-hide-small  w3-border-right">후기</a>
@@ -148,8 +148,8 @@
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div>
   
-   <div class="w3-container w3-section" id="reply">
-  <jsp:include page="/list.jsp"></jsp:include>
+   <div class="w3-container w3-section  " id="reply">
+  <jsp:include page="/reply/list.jsp"></jsp:include>
   </div>
   
  
